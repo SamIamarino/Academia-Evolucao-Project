@@ -1,5 +1,5 @@
 export default function Footer(){
     return(
-        <h1>teste</h1>
+        <p>&copy; 2025 [SamIamarino]. Todos os direitos reservados.</p>
     )
 }
