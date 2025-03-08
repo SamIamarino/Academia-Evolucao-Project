@@ -1,0 +1,33 @@
+*{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    gap: 3vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #1C6CB4;
+}
+
+.logo{
+    padding: 15px;
+    width: 200px;
+}
