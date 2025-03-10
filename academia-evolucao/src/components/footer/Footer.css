@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    height: 300px;
+    color: white;
+    background: #4d4d4d;
+    
+}
+
+.footer-card{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.midia-icon{
+    padding-right: 20px;
+    transition: 0.3s;
+}
+
+.midia-icon:hover{
+    cursor: pointer;
+    box-shadow: rgba(209, 209, 209, 0.35) 0px 5px 15px;
+}
