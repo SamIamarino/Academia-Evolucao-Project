@@ -1,4 +1,4 @@
-.card{
+.about-card{
     width: 250px;
     height: 250px;
     border: 3px solid #1C6CB4;
@@ -13,13 +13,13 @@
     
 }
 
-.card-header{
+.about-card-header{
     display: flex;
     justify-content: space-around;
     margin: 20px;
 }
 
-.card-body{
+.about-card-body{
     padding: 20px;
     text-align: center;
     height: 120px;
