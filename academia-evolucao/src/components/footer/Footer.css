@@ -9,21 +9,21 @@
 }
 
 .footer-card{
-    /* border: 1px solid black; */
     width: 300px;
     height: 200px;
     margin: 30px;
 }
 
 .midia-icon{
-    width: 60px;
-    padding-right: 20px;
+    width:  40px;
+    height: 40px;
+    margin-right: 20px;
     transition: 0.3s;
 }
 
 .midia-icon:hover{
     cursor: pointer;
-    box-shadow: rgba(209, 209, 209, 0.35) 0px 5px 15px;
+    border-radius: 0px;
 }
 
 .icon-container{
@@ -31,7 +31,6 @@
 }
 
 .text-container{
-    
     margin-left: 20px;
 }
 

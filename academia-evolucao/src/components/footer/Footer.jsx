@@ -1,8 +1,8 @@
 import './Footer.css'
 import logoFooter from '../../assets/logos/logo-verde-brancoDesktop.png'
-import whatsLogo from '../../assets/imgensMidia/whats.png'
-import instaLogo from '../../assets/imgensMidia/insta.png'
-import faceLogo from '../../assets/imgensMidia/face.png'
+import whatsLogo from '../../assets/imgensMidia/whats.svg'
+import instaLogo from '../../assets/imgensMidia/insta.svg'
+import faceLogo from '../../assets/imgensMidia/face.svg'
 
 export default function Footer(){
     return(
