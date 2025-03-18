@@ -8,8 +8,8 @@
 header{
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; caso queira deixar ele sticky só precisa tirar o comentario e arrumar o carrousel */
     background: #ffffff;
 }
 

@@ -1,33 +1,34 @@
 import { React } from "react";
 import { Carousel } from 'antd';
+import './PhotoCarrousel.css'
+const carouselStyle = {
+  width: '100%',       // Full width
+  height: '700px',   // Increase the height
+};
 
+const imageStyle = {
+  width: '100%',
+  height: '700px',
+  objectFit: 'cover', // E;nsures images scale properly
+};
 
-const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
+export default function PhotoCarrousel({photoArray}){   
 
-export default function PhotoCarrousel(){   
+  // Passar array como prop e dar um map dentro do carrousel.
+
     return(
-    <>
-      <Carousel dotPosition='left'>
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-      </Carousel>
-    </>
+      <div style={carouselStyle} className="carrousel">
+        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} >
+          {
+            photoArray.map( (item) => 
+            <div>
+              <img src={item.imageUrl} alt={item.description} style={imageStyle}/>
+            </div>
+            )
+          }
+          </Carousel>
+      </div>
+      
     );
 
 }

@@ -1,5 +1,7 @@
 import './PlanoCard.css'
 import fotoExercicio from '../../assets/carafazendoexercicio.png'
+
+// Coloar photoUrl como prop no plano card
 export default function PlanoCard ({plano,description1,description2}){
 
     return(
