@@ -16,9 +16,15 @@ export default function Footer(){
 
                 <div className='icon-container'>
                     {/* mudar pra svg para aplicar os estilos certos e isso tem que ser 'wrapped com um tag <a></a> */}
-                    <img src={faceLogo} alt="face-icon" className='midia-icon'/> 
-                    <img src={instaLogo} alt="insta-icon" className='midia-icon'/>
-                    <img src={whatsLogo} alt="whats-icon" className='midia-icon'/>
+                    <a href="">
+                        <img src={faceLogo} alt="face-icon" className='midia-icon'/> 
+                    </a>
+                    <a href="">
+                        <img src={instaLogo} alt="insta-icon" className='midia-icon'/>
+                    </a>
+                    <a href="">
+                        <img src={whatsLogo} alt="whats-icon" className='midia-icon'/>
+                    </a>
                 </div>
             </div>
             <hr />
