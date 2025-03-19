@@ -1,3 +1,26 @@
 .carrousel{
     z-index: 0;
 }
+
+.carouselStyle{
+    width: 100%;
+    height: 500px;
+}
+
+.imageStyle{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* Makes the carrousel smaller */
+@media (max-width: 700px) {
+    .carouselStyle{
+        height: 100px;
+    }
+    .imageStyle{
+        height: 100px;
+    }
+    
+  }

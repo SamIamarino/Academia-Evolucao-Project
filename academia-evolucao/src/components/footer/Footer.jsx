@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <footer className='footer'>
             <div className='footer-card'>
-                <img src={logoFooter} alt="Logo evolução" className='logo'/>
+                <img src={logoFooter} alt="Logo evolução" className='logo-footer'/>
 
                 <div className='text-container'> 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore</p>

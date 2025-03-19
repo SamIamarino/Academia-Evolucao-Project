@@ -1,14 +1,15 @@
 import { React } from "react";
 import { Carousel } from 'antd';
 import './PhotoCarrousel.css'
+
 const carouselStyle = {
   width: '100%',       // Full width
-  height: '700px',   // Increase the height
+  height: '500px',   // Increase the height
 };
 
 const imageStyle = {
   width: '100%',
-  height: '700px',
+  height: '500px',
   objectFit: 'cover', // E;nsures images scale properly
 };
 
@@ -18,7 +19,7 @@ export default function PhotoCarrousel({photoArray}){
 
     return(
       <div style={carouselStyle} className="carrousel">
-        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} >
+        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} draggable>
           {
             photoArray.map( (item) => 
             <div>

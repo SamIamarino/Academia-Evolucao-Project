@@ -1,0 +1,40 @@
+.about-container{
+    /* border: 1px solid black; */
+    height: 70vh;
+}
+
+.about-title{
+    margin: 120px 150px 30px 300px;
+    font-size: 40px;
+}
+
+.about-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+
+@media (max-width: 1050px) {
+    .about-card-container{
+        width: 100%;
+        gap:0px;
+        
+    }
+    .about-card-container::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-title{
+        margin: 80px 150px 10px 60px;
+        font-size: 40px;
+    }
+    
+
+    /* .about-card-container{
+      flex-direction: column;
+    } */
+}

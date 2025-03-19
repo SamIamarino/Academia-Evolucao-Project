@@ -34,6 +34,11 @@
     margin-left: 20px;
 }
 
+.logo-footer{
+    padding: 15px;
+    width: 180px;
+}
+
 hr{
     background-color: white;
     height: 3px;

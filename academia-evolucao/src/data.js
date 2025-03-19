@@ -25,3 +25,9 @@ export const CARROUSEL_IMAGES = [
 export const PLANO_CONTENT = [
     {imageUrl: photo1, description: ''},
 ];
+
+export const ABOUT_CARD_CONTENT = [
+    {imageUrl: photo1 , title: '' , description: ''},
+    {imageUrl: photo1 , title: '' , description: ''},
+    {imageUrl: photo1 , title: '' , description: ''},
+]
