@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/header/Header';
-import AboutCard from './components/aboutCard/AboutCard';
-import PlanoCard from './components/planoCard/PlanoCard';
 import Footer from './components/footer/Footer';
 import PhotoCarrousel from './components/photoCarrousel/PhotoCarrousel';
 import {CARROUSEL_IMAGES} from './data.js'
 import { useEffect } from 'react';
 import AboutContainer from './components/aboutContainer/AboutContainer.jsx';
+import { FloatButton } from 'antd';
+import { WhatsAppOutlined } from '@ant-design/icons';
 const App = () => {
 
   // useEffect(() => {
@@ -19,16 +19,10 @@ const App = () => {
       <Header />
       <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
       <AboutContainer />
-      {/* <PlanoCard />
-      <PlanoCard />
-      <PlanoCard />
-      <PlanoCard />
-      <PlanoCard />
-      <PlanoCard />
-      <PlanoCard /> */}
+      <FloatButton tooltip={<div>Whatsapp</div>} href='https://wa.me/5538602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
 
       <Footer />
     </>
   );
 };
-export default App;
+export default App; 

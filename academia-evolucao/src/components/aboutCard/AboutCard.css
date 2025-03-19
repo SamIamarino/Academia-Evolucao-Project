@@ -36,7 +36,9 @@
     font-size: 30px;
 }
 
-@media (max-width: 750px) {
-   
+@media (max-width: 1300px) {
+   .about-card{
+    margin: 10px;
+   }
     
 }
