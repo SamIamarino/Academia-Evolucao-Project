@@ -1,8 +1,9 @@
 import { React } from "react";
 import { Carousel } from 'antd';
+import { useState, useEffect } from "react";
 import './PhotoCarrousel.css'
 
-const carouselStyle = {
+const carouselStyleDesktop = {
   width: '100%',       // Full width
   height: '500px',   // Increase the height
 };
@@ -13,17 +14,38 @@ const imageStyle = {
   objectFit: 'cover', // E;nsures images scale properly
 };
 
+const carouselStyleMobile = {
+  width: '100%',       // Full width
+  height: '300px',   // Increase the height
+};
+
+
 export default function PhotoCarrousel({photoArray}){   
+
+  const isMobile = window.innerWidth <= 750 ? true : false;
+
+  //É preciso que a DOM renderize novamente para ser trocada o icone.
+      const [carouselStyle, setCarouselStyle] = useState( isMobile ? carouselStyleMobile : carouselStyleDesktop);
+  
+      useEffect(() => {
+          
+          const handleResize = () => {
+            setCarouselStyle(isMobile ? carouselStyleMobile : carouselStyleDesktop);
+          };
+  
+          window.addEventListener("resize", handleResize);
+          return () => window.removeEventListener("resize", handleResize);
+      }, [isMobile]);
 
   // Passar array como prop e dar um map dentro do carrousel.
 
     return(
       <div style={carouselStyle} className="carrousel">
-        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} draggable>
+        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} draggable dots={isMobile ? false : true}>
           {
             photoArray.map( (item) => 
             <div>
-              <img src={item.imageUrl} alt={item.description} style={imageStyle}/>
+              <img src={item.imageUrl} alt={item.description} className="imageStyle"/>
             </div>
             )
           }

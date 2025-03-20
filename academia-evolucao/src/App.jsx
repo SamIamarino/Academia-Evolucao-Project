@@ -19,7 +19,7 @@ const App = () => {
       <Header />
       <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
       <AboutContainer />
-      <FloatButton tooltip={<div>Whatsapp</div>} href='https://wa.me/5538602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
+      <FloatButton  href='https://wa.me/5538602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
 
       <Footer />
     </>
