@@ -1,0 +1,11 @@
+.our-space-title{
+    margin: 80px 150px 50px 300px;
+    font-size: 40px;
+}
+
+@media (max-width:750px){
+    .our-space-title{
+        margin: 110px 150px 30px 50px;
+        font-size: 25px;
+    }
+}
