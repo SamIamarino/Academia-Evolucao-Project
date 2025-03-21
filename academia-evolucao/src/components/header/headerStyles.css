@@ -13,6 +13,18 @@ header{
     background: #ffffff;
 }
 
+.dark-themed-header{
+    background: #1C1C1C;
+}
+
+.dark-themed-header-a{
+    color: white;
+}
+
+.dark-themed-header-a:hover{
+    color: #04FC04;
+}
+
 ul{
     padding: 20px;
     display: flex;
