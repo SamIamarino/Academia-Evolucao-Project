@@ -1,0 +1,33 @@
+.plano-container{
+    /* border: 1px solid black; */
+    height: 60vh;
+}
+
+.plano-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.plano-title{
+    margin: 120px 150px 50px 300px;
+    font-size: 40px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: black ; /* Change this to any color you want */
+}
+
+
+@media (max-width: 750px) {
+    .plano-container{
+        height: 80vh;
+    }
+    .plano-title{
+        margin: 50px 150px 30px 50px;
+        font-size: 25px;
+        width: 150px;
+    }
+}
