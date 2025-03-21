@@ -14,7 +14,7 @@ export default function Footer(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore</p>
                 </div>
 
-                <div className='icon-container'>
+                <div className='icon-container' id='contatos'>
                     {/* mudar pra svg para aplicar os estilos certos e isso tem que ser 'wrapped com um tag <a></a> */}
                     <a href="https://www.facebook.com/evolucaoitapira">
                         <img src={faceLogo} alt="face-icon" className='midia-icon'/> 

@@ -26,8 +26,9 @@ export default function Header(){
             <ul>
                 <li><a href="#nossoEspaco">Nosso Espaço</a></li>
                 <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#nossosPlanos">Planos</a></li>
+                {/* Contatos apenas para teste dps sera tirado */}
+                <li><a href="#contatos">Contato</a></li>
             </ul>    
         </div>
     </header>

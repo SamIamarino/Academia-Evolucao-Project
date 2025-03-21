@@ -36,7 +36,7 @@ export default function PlanosContainer(){
 
 
     return(
-        <div className="plano-container">
+        <div className="plano-container" id="nossosPlanos">
             <h1 className='plano-title'>NOSSOS PLANOS: </h1>
             {content}
         </div>
