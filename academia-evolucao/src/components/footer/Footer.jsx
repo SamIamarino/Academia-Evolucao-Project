@@ -22,7 +22,7 @@ export default function Footer(){
                     <a href="https://www.instagram.com/evolucaoitapira/">
                         <img src={instaLogo} alt="insta-icon" className='midia-icon'/>
                     </a>
-                    <a href="https://wa.me/5538602440">
+                    <a href="https://wa.me/38602440">
                         <img src={whatsLogo} alt="whats-icon" className='midia-icon'/>
                     </a>
                 </div>

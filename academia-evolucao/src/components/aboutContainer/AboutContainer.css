@@ -1,6 +1,7 @@
 .about-container{
     /* border: 1px solid black; */
-    height: 70vh;
+    height: 45vh;
+    /* erro do box shadow n ta aqui */
 }
 
 .about-title{
@@ -12,6 +13,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
@@ -21,7 +23,6 @@
         margin: 120px 150px 50px 100px;
     }
     .about-card-container{
-        
         gap:0px;        
     }
     .about-card-container::-webkit-scrollbar{
@@ -33,7 +34,7 @@
 /*Mobile Config*/
 @media (max-width: 750px) {
     .about-title{
-        margin: 50px 150px 0px 60px;
+        margin: 50px 150px 0px 50px;
         font-size: 25px;
         width: 150px;
     }

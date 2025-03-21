@@ -42,9 +42,13 @@
     .about-card{
         height: 280px;
         width: 280px;
-        
+
+        /* Centralizar */
         margin: auto;
         margin-top: 50px;
+
+        /* Arrumar por conta do box shadow */
+        margin-bottom: 25px;
     }
 }
 

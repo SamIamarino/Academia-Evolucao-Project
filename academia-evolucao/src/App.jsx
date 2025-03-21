@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import AboutContainer from './components/aboutContainer/AboutContainer.jsx';
 import { FloatButton } from 'antd';
 import { WhatsAppOutlined } from '@ant-design/icons';
+import OurSpaceContainer from './components/ourSpaceContainer/OurSpaceContainer.jsx';
+import PlanosContainer from './components/planosContainer/PlanosContainer.jsx';
 const App = () => {
 
   // useEffect(() => {
@@ -19,8 +21,9 @@ const App = () => {
       <Header />
       <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
       <AboutContainer />
-      <FloatButton  href='https://wa.me/5538602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
-
+      <OurSpaceContainer title={"Nosso Espaço: "}/>
+      <FloatButton  href='https://wa.me/551138602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
+      <PlanosContainer />
       <Footer />
     </>
   );

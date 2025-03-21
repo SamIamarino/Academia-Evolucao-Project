@@ -14,30 +14,26 @@ const desktopContent =
     <AboutCard />
 </div>;
 
+// dar um array.map com os dados do array.
 const mobileContent = 
-
-    <Carousel draggable dots={false} arrows>
-        <div className='center'>
+    <Carousel draggable dots={false} arrows style={{height:"50px"}}>
             <AboutCard />   
-        </div>
-        <div className='center'>
             <AboutCard />   
-        </div>
-        <div className='center'>
             <AboutCard />   
-        </div>
     </Carousel>
 
+
+const isMobile = window.innerWidth <= 750 ? true : false;
 
 
 export default function AboutContainer(){
 
-    const [content, setContent] = useState(window.innerWidth <= 750 ? mobileContent : desktopContent);
+    const [content, setContent] = useState(isMobile ? mobileContent : desktopContent);
     
         useEffect(() => {
             
             const handleResize = () => {
-                setContent(window.innerWidth <= 750 ? mobileContent : desktopContent);
+                setContent(isMobile ? mobileContent : desktopContent);
             };
     
             window.addEventListener("resize", handleResize);

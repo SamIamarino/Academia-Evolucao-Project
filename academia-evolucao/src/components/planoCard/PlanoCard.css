@@ -30,3 +30,11 @@
     word-wrap: break-word; 
     overflow-wrap: break-word;
 }
+
+@media (max-width: 750px ) {
+    .plano-card{
+        margin: auto;
+        /* Bug do box-shadow */
+        margin-bottom: 20px;
+    }
+}
