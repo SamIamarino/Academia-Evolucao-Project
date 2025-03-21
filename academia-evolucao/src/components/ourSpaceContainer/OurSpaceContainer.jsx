@@ -7,7 +7,7 @@ import './OurSpaceContainer.css';
 export default function OurSpaceContainer({title}){
     return(
         <>
-            <h1 className="our-space-title" style={{marginBottom: "40px"}}>{title}</h1>
+            <h1 className="our-space-title" style={{marginBottom: "40px"}} id="nossoEspaco">{title}</h1>
             <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
         </>
     );
