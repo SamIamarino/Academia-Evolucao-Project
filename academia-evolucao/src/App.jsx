@@ -3,18 +3,27 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import PhotoCarrousel from './components/photoCarrousel/PhotoCarrousel';
 import {CARROUSEL_IMAGES} from './data.js'
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import AboutContainer from './components/aboutContainer/AboutContainer.jsx';
 import { FloatButton } from 'antd';
 import { WhatsAppOutlined } from '@ant-design/icons';
 import OurSpaceContainer from './components/ourSpaceContainer/OurSpaceContainer.jsx';
 import PlanosContainer from './components/planosContainer/PlanosContainer.jsx';
+
+
 const App = () => {
 
-  // useEffect(() => {
-  //   console.log('teste')
-  //   Aqui colocar matchMedia para verificar qual tema esta o dispositivo
-  // })
+
+  const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  // precisa fazer o background mudar caso esteja branco dnv
+  // só procurar em outro useEffect q ta certo.
+  useEffect(() => {
+    if(isDarkTheme){
+      document.body.style.backgroundColor = "#1C1C1C";
+    }else{
+      document.body.style.backgroundColor = "#white";
+    }
+  }, [isDarkTheme])
   
   return (
     <>

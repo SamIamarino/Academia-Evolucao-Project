@@ -45,7 +45,7 @@ export default function AboutContainer(){
         <div className='about-container'>
 
             {/* Esse H1 nao eh para existir */}
-            <h1 className='about-title'>POR QUE NOS ESCOLHER: </h1>
+            {/* <h1 className='about-title'>POR QUE NOS ESCOLHER: </h1> */}
             {content}
         </div>
     );

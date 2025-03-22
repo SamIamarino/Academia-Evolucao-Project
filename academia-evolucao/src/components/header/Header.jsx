@@ -10,11 +10,14 @@ export default function Header(){
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+    // Isso no primeiro render -- verifica qual logo precisa colocar 
     const [logo, setLogo] = useState(isDarkTheme ? (isMobile ? logoMobileDark : logoDesktopDark) : (isMobile ? logoMobileLight : logoDesktopLight));
 
     useEffect(() => {
         const updateValues = () => {
             const mobile = window.innerWidth <= 750;
+            // retorna true falso
             const darkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
             setIsMobile(mobile);

@@ -12,6 +12,20 @@
     
 }
 
+.about-card-dark-themed{
+    width: 350px;
+    height: 350px;
+    border: 3px solid #04FC04;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    color: white;
+    /* only for puposes of styling */
+    box-shadow: rgba(83, 83, 83, 0.35) 0px 5px 15px;
+}
+
 .about-card-header{
     display: flex;
     justify-content: space-around;
@@ -28,7 +42,7 @@
 }
 
 .icon{
-    width: 70px;
+    width: 80px;
 }
 
 .about-card-title{
