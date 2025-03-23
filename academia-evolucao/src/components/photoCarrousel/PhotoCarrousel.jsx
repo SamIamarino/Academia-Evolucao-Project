@@ -41,7 +41,7 @@ export default function PhotoCarrousel({photoArray}){
 
     return(
       <div style={carouselStyle} className="carrousel">
-        <Carousel dotPosition='bottom' autoplay autoplaySpeed={1500} draggable dots={isMobile ? false : true}>
+        <Carousel dotPosition='bottom' draggable dots={isMobile ? false : true}>
           {
             photoArray.map( (item) => 
             <div>
