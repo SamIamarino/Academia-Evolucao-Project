@@ -21,10 +21,6 @@
     color: white;
 }
 
-.slick-prev::before,
-.slick-next::before {
-  color: black ; /* Change this to any color you want */
-}
 
 
 @media (max-width: 750px) {

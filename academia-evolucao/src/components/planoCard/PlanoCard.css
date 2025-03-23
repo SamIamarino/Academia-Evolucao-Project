@@ -15,21 +15,41 @@
 }
 
 .plano-card-header{
-    background-color: green;
+    background-color: #1C6CB4;
     width: 100%;
     text-align: center;
     color: white;
     padding: 10px;
 }
 
+.plano-card-header-dark-themed{
+    background-color: #04FC04;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
 .plano-card-body{
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     height: 100%;
     white-space: normal;
     word-wrap: break-word; 
     overflow-wrap: break-word;
 }
+
+.plano-card-body-dark-themed{
+    color: white;
+    padding: 25px;
+    text-align: center;
+    height: 100%;
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+
 
 @media (max-width: 750px ) {
     .plano-card{
