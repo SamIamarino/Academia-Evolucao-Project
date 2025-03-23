@@ -1,6 +1,8 @@
 .plano-container{
     /* border: 1px solid black; */
-    height: 80vh;
+    /* height: 80vh; */
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .plano-card-container{
@@ -25,7 +27,10 @@
 
 @media (max-width: 750px) {
     .plano-container{
-        height: 80vh;
+        /* height: 80vh; */
+
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .plano-title{
         margin: 50px 150px 30px 50px;

@@ -1,7 +1,9 @@
 .about-container{
     /* border: 1px solid black; */
+    
     margin-top: 100px;
-    height: 45vh;
+    margin-bottom: 75px;
+    /* height: 45vh; */
     /* erro do box shadow n ta aqui */
 }
 
