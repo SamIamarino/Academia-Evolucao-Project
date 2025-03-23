@@ -30,9 +30,11 @@ const App = () => {
       <Header />
       <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
       <AboutContainer />
+      {/* RENOMEAR ESSE CONTAINER -- CAROUSEL CONTAINER ALGO ASSIM */}
       <OurSpaceContainer title={"Nosso Espaço: "}/>
       <FloatButton  href='https://wa.me/551138602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
       <PlanosContainer />
+      <OurSpaceContainer title={"ESTAMOS PREPARADOS PARA TE AUXILIAR: "}/>
       <Footer />
     </>
   );
