@@ -16,7 +16,7 @@ const desktopContent =
 
 // dar um array.map com os dados do array.
 const mobileContent = 
-    <Carousel draggable dots={false} arrows style={{height:"50px"}}>
+    <Carousel draggable dots={false} arrows>
             <AboutCard />   
             <AboutCard />   
             <AboutCard />   
