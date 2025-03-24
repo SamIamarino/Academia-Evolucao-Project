@@ -28,9 +28,6 @@
     .about-card-container{
         gap:0px;        
     }
-    .about-card-container::-webkit-scrollbar{
-        display: none;
-    }
 }
 
 

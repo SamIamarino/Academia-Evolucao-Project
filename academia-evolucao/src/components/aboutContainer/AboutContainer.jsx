@@ -2,52 +2,38 @@ import './AboutContainer.css';
 import AboutCard from '../aboutCard/AboutCard';
 import { Carousel } from 'antd';
 import { useState, useEffect } from 'react';
-// Vamos usar depois
-import { ABOUT_CARD_CONTENT } from '../../data';
 
+const desktopContent = (
+    <div className='about-card-container'>
+        <AboutCard />
+        <AboutCard />
+        <AboutCard />
+    </div>
+);
 
-
-const desktopContent = 
-<div className='about-card-container'>
-    <AboutCard />
-    <AboutCard />
-    <AboutCard />
-</div>;
-
-// dar um array.map com os dados do array.
-const mobileContent = 
+const mobileContent = (
     <Carousel draggable dots={false} arrows>
-            <AboutCard />   
-            <AboutCard />   
-            <AboutCard />   
+        <AboutCard />   
+        <AboutCard />   
+        <AboutCard />   
     </Carousel>
+);
 
+export default function AboutContainer() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
-const isMobile = window.innerWidth <= 750 ? true : false;
+    useEffect(() => {
+        const updateValues = () => {
+            setIsMobile(window.innerWidth <= 750);
+        };
 
+        window.addEventListener("resize", updateValues);
+        return () => window.removeEventListener("resize", updateValues);
+    }, []);
 
-export default function AboutContainer(){
-
-    const [content, setContent] = useState(isMobile ? mobileContent : desktopContent);
-    
-        useEffect(() => {
-            
-            const handleResize = () => {
-                setContent(isMobile ? mobileContent : desktopContent);
-            };
-    
-            window.addEventListener("resize", handleResize);
-            return () => window.removeEventListener("resize", handleResize);
-        }, [content]);
-
-
-    return(
+    return (
         <div className='about-container'>
-
-            {/* Esse H1 nao eh para existir */}
-            {/* <h1 className='about-title'>POR QUE NOS ESCOLHER: </h1> */}
-            {content}
+            {isMobile ? mobileContent : desktopContent}
         </div>
     );
-
 }
