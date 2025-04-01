@@ -14,3 +14,6 @@ If you are developing a production application, we recommend using TypeScript an
 ## Pelo amor de Deus trocar todas as margins por viewheight and width
 
 ## Passar pros components como prop se ele esta no darkTheme e dps ve se funfa ? 
+
+## Jeito que foi desenvolvido 
+Todos os components que tem o nome Component+Container ex: OurSpaceContainer foi feito para chamar os outros componentes dentro dele para facilitar na hora de construção do layout.
