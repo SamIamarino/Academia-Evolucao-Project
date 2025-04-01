@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
+import MainPage from './pages/MainPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -12,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/aboutUs',
-    element: <h1>Teste roteamento</h1>
+    element: <AboutPage />
   }
 ]);
 

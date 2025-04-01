@@ -1,7 +1,15 @@
+
 export default function MainPage(){
     return(
-        <h1>
-            teste
-        </h1>
+
+        
+
+        
+        <>
+            <Header />
+            <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
+            <AboutContainer />
+            <a href='/'>Voltar para home</a>
+        </>
     );
 }
