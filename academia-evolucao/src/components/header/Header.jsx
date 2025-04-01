@@ -48,15 +48,17 @@ export default function Header(){
 
     return(
     <header className={isDarkTheme ? 'dark-themed-header' : undefined}>
+       <a href="/">
         <img src={logo} alt="logo-evolução" className="logo"/>    
+       </a>
         <div>
-            <ul>
+            <ul className='link-container'>
                 {/* Não sei se guardar esse ternario numa variavel e passar seria mais legivel */}
-                <li><a href="#nossoEspaco" className={isDarkTheme ? 'dark-themed-header-a' : ''}>Nosso Espaço</a></li>
-                <li><a href="#" className={isDarkTheme ? 'dark-themed-header-a' : ''}>Sobre nós</a></li>
-                <li><a href="#nossosPlanos" className={isDarkTheme ? 'dark-themed-header-a' : ''}>Planos</a></li>
+                <li><a href="#nossoEspaco" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Nosso Espaço</a></li>
+                <li><a href="#" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Sobre nós</a></li>
+                <li><a href="#nossosPlanos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Planos</a></li>
                 {/* Contatos apenas para teste dps sera tirado */}
-                <li><a href="#contatos" className={isDarkTheme ? 'dark-themed-header-a' : ''}>Contato</a></li>
+                <li><a href="#contatos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Contato</a></li>
             </ul>    
         </div>
     </header>
