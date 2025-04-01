@@ -1,9 +1,18 @@
+.main-about-container{
+    margin-top: 15vh;
+   height: 45vh;
+   margin-bottom: 15vh;
+}
+
 .about-container{
     /* border: 1px solid black; */
-    
-    margin-top: 100px;
-    margin-bottom: 75px;
-    /* height: 45vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    gap: 50px;
+    /* Display flex faz o carrousel sumir */
+    /* display: flex; */
     /* erro do box shadow n ta aqui */
 }
 
@@ -12,21 +21,38 @@
     font-size: 40px;
 }
 
-.about-card-container{
-    width: 100%;
+.button-container{
+    margin-top: 3vh;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    flex-direction: column;
+   
 }
 
+.more-button{
+    width: 30%;
+    border: 3px solid #04FC04;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    background-color: #1C1C1C;
+    color: white;
+}
+.more-button:hover{
+    background-color: #04FC04;
+    color: black;
+}
+
+
 /*Tela desktop reduzida*/
-@media (max-width: 1300px) {
+@media (max-width: 1150px) {
     .about-title{
         margin: 120px 150px 50px 100px;
     }
     .about-card-container{
-        gap:0px;        
+        gap:10px;        
     }
 }
 
@@ -37,5 +63,17 @@
         margin: 50px 150px 0px 50px;
         font-size: 25px;
         width: 150px;
+    }
+    .about-container{
+        display: block;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .more-button{
+        width: 80%;
     }
 }
