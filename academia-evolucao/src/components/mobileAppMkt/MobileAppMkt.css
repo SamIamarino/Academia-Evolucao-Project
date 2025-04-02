@@ -1,0 +1,48 @@
+.mobile-app-container{
+    /* border: 1px solid white; */
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-app-main-container{
+    /* border: 1px solid white; */
+    color: white;
+    border-radius: 25px;
+    width: 50%;
+    height: 65%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+
+.mobile-item-list{
+ padding-left: 20px;   
+}
+
+.mobile-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    gap: 8vh;
+
+}
+
+.mobile-container-title{
+    font-size: 40px;
+}
+
+.mobile-container-paragraph{
+    font-size: 30px;
+}
+
+.smartphone-img{
+    width: 450px;
+    position: relative;
+    left: 120px;
+    bottom: 20px;
+}
