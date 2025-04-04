@@ -2,19 +2,15 @@ import './PlanosContainer.css';
 import PlanoCard from '../planoCard/PlanoCard.jsx';
 import { useState,useEffect } from 'react';
 import { Carousel } from 'antd';
-
+import { PLANO_CONTENT } from '../../data.js';
 const desktopContent = 
 <div className='plano-card-container'>
-    <PlanoCard/>
-    <PlanoCard/>
-    <PlanoCard/>
+    {PLANO_CONTENT.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)}
 </div>
 
 const mobileContent = 
 <Carousel draggable dots={false} arrows>
-    <PlanoCard/>
-    <PlanoCard/>
-    <PlanoCard/> 
+{PLANO_CONTENT.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)} 
 </Carousel>
 
 

@@ -1,8 +1,9 @@
 import './PlanoCard.css'
 import fotoExercicio from '../../assets/carafazendoexercicio.png'
 import { useState,useEffect } from 'react';
+import WhatsAppButton from '../whatsappButton/WhatsappButton';
 // Coloar photoUrl como prop no plano card
-export default function PlanoCard ({plano,description1,description2}){
+export default function PlanoCard ({plano,description,imagemPlano}){
 
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
 
@@ -28,16 +29,16 @@ export default function PlanoCard ({plano,description1,description2}){
     return(
         <div className="plano-card" >
             <div>
-                <img src={fotoExercicio} alt="Imagem plano" className='plano-img'/>
+                <img src={imagemPlano} alt="Imagem plano" className='plano-img'/>
                 <div className={isDarkTheme ? 'plano-card-header-dark-themed':'plano-card-header' }>
-                    <h1>{plano} Plano semestral</h1>
+                    <h1>{plano}</h1>
                 </div>
 
             </div>
             <div className={isDarkTheme ? 'plano-card-body-dark-themed' : 'plano-card-body'}>
-                <p>{description1}testeasddddddddddddddddddddddddddddddddddddddddddddd</p>
+                <p>{description}</p>
                 <hr />
-                <p>{description2}testeasdadasdasdsadddddddddddddddddddddddddddddddddd</p>
+                <WhatsAppButton/>
             </div>
         </div>
     );
