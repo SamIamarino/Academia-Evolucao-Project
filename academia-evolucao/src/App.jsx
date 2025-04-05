@@ -9,7 +9,7 @@ import { FloatButton } from 'antd';
 import { WhatsAppOutlined } from '@ant-design/icons';
 import OurSpaceContainer from './components/ourSpaceContainer/OurSpaceContainer.jsx';
 import PlanosContainer from './components/planosContainer/PlanosContainer.jsx';
-
+import MobileAppMkt from './components/mobileAppMkt/MobileAppMkt.jsx';
 
 const App = () => {
 
@@ -52,6 +52,7 @@ const App = () => {
       <FloatButton  href='https://wa.me/551138602440' icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}}/>
       <PlanosContainer />
       <OurSpaceContainer title={"ESTAMOS PREPARADOS PARA TE AUXILIAR: "}/>
+      <MobileAppMkt />
       <Footer />
     </>
   );
