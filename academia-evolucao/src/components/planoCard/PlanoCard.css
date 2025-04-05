@@ -32,6 +32,9 @@
 }
 
 .plano-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 25px;
     text-align: center;
     height: 100%;
@@ -44,6 +47,9 @@
 }
 
 .plano-card-body-dark-themed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: white;
     padding: 25px;
     text-align: start;

@@ -6,6 +6,7 @@ import { ArrowRightOutlined, DoubleRightOutlined } from '@ant-design/icons'
 const desktopContent = (
     <div className='main-about-container'>
         <div className='about-container'>
+            {/* colocar um map a partir de um array aq */}
             <AboutCard />
             <AboutCard />
             <AboutCard />
@@ -20,6 +21,7 @@ const desktopContent = (
 const mobileContent = (
     <>
         <Carousel draggable dots={false} arrows>
+            {/* colocar um map a partir de um array aq */}
             <AboutCard />   
             <AboutCard />   
             <AboutCard />   
