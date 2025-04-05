@@ -1,0 +1,16 @@
+.whats-button{
+    display: block;
+    border: 2px solid white;
+    padding: 10px;
+    position: relative;
+    color: white;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.whats-button:hover{
+    color: black;
+    background: #04FC04;
+    
+}

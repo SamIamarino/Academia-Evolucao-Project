@@ -21,9 +21,22 @@ export const CARROUSEL_IMAGES = [
     },
 ];
 
-
+// configurar este primeiro 
 export const PLANO_CONTENT = [
-    {imageUrl: photo1, description: ''},
+    {
+        plano: 'Semestral',
+        imagemPlano: photoPeso, 
+        description: 'Plano semestral, parcelado em 6 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartão todos os planos contém contrato'},
+    {
+        plano: 'Trimestral',
+        imagemPlano: photoPeso, 
+        description: 'Plano trimestral, parcelado em 3 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartãotodos os planos contém contrato'
+    },
+    {
+        plano: 'Mensal',
+        imagemPlano: photoPeso, 
+        description: 'Plano mensal no valor de r$ 130,00, o aluno pode frequentar a academia por um mêstodos os planos contém contrato'
+    },
 ];
 
 export const ABOUT_CARD_CONTENT = [
