@@ -33,7 +33,7 @@ const mobileContent = (
     </>
 );
 
-export default function AboutContainer() {
+export default function AboutContainer({dataFont}) {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
     useEffect(() => {
