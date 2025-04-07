@@ -36,7 +36,7 @@ export default function PlanoCard ({plano,description,imagemPlano}){
 
             </div>
             <div className={isDarkTheme ? 'plano-card-body-dark-themed' : 'plano-card-body'}>
-                <p>{description}</p>
+                <p className='oswald-font'>{description}</p>
                 <hr />
                 <WhatsAppButton/>
             </div>

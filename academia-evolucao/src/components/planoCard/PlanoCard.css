@@ -59,7 +59,7 @@
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -67,6 +67,8 @@
 
 @media (max-width: 750px ) {
     .plano-card{
+        width: 300px;
+        /* height: 550px; */
         margin: auto;
         /* Bug do box-shadow */
         margin-bottom: 20px;
