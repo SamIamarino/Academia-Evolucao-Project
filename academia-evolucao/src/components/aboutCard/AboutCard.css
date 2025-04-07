@@ -1,7 +1,7 @@
 .about-card{
     width: 350px;
     height: 350px;
-    border: 3px solid #1C6CB4;
+    border: 2px solid #1C6CB4;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
 .about-card-dark-themed{
     width: 350px;
     height: 350px;
-    border: 3px solid #04FC04;
+    border: 2px solid #04FC04;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
