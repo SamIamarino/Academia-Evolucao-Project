@@ -5,7 +5,7 @@ import './OurSpaceContainer.css';
 // Provavelmente vai ser melhor mudar o nome desse component mais pra frente. 
 //Vai ter uma variavel para receber as infos do data.js aqui.
 
-export default function OurSpaceContainer({title}){
+export default function CarrouselContainer({title}){
 
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
 
