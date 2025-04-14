@@ -1,5 +1,17 @@
 .whats-button{
     display: block;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+    color: black;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+    
+}
+
+.whats-button-dark-themed{
+    display: block;
     border: 2px solid white;
     padding: 10px;
     position: relative;
@@ -9,8 +21,14 @@
     text-align: center;
 }
 
+.whats-button-dark-themed:hover{
+    color: black;
+    background: beige;
+    
+}
+
 .whats-button:hover{
     color: black;
-    background: #04FC04;
+    background: #1C6CB4;
     
 }
