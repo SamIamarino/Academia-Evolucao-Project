@@ -2,18 +2,9 @@ import './PlanosContainer.css';
 import PlanoCard from '../planoCard/PlanoCard.jsx';
 import { useState,useEffect } from 'react';
 import { Carousel } from 'antd';
-import { PLANO_CONTENT } from '../../data.js';
-const desktopContent = 
-<div className='plano-card-container'>
-    {PLANO_CONTENT.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)}
-</div>
+// import { PLANO_CONTENT } from '../../data.js';
 
-const mobileContent = 
-<Carousel draggable dots={false} arrows>
-{PLANO_CONTENT.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)} 
-</Carousel>
-
-export default function PlanosContainer(){
+export default function PlanosContainer({dataSource}){
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
     const [content, setContent] = useState(window.innerWidth <= 750 ? true : false);
         
@@ -38,6 +29,17 @@ export default function PlanosContainer(){
                     themeWatcher.removeEventListener("change", updateValues);
                 }
             }, [content]);
+
+        const desktopContent = 
+            <div className='plano-card-container'>
+                {dataSource.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)}
+            </div>
+
+        const mobileContent = 
+            <Carousel draggable dots={false} arrows>
+                {dataSource.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)} 
+            </Carousel>
+
 
 
     return(

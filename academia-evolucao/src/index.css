@@ -33,3 +33,7 @@ body{
     background-color: rgba(235, 235, 235, 0.568);
 }
 
+.dark-row td {
+    background-color: #000 !important;
+    color: #fff !important;
+}

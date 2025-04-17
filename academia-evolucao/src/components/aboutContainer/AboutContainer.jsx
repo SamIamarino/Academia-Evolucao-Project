@@ -2,44 +2,49 @@ import './AboutContainer.css';
 import AboutCard from '../aboutCard/AboutCard';
 import { Carousel } from 'antd';
 import { useState, useEffect } from 'react';
-import { ArrowRightOutlined, DoubleRightOutlined } from '@ant-design/icons'
-const desktopContent = (
-    <div className='main-about-container'>
-        <div className='about-container'>
-            {/* colocar um map a partir de um array aq */}
-            <AboutCard />
-            <AboutCard />
-            <AboutCard />
-            
-        </div>
-        <div className='button-container'>
-            <a href="/aboutUs" className='more-button'>Saiba Mais <DoubleRightOutlined /></a>
-        </div>
-    </div>
-);
+import { DoubleRightOutlined } from '@ant-design/icons'
 
-const mobileContent = (
-    <>
-        <Carousel draggable dots={false} arrows>
-            {/* colocar um map a partir de um array aq */}
-            <AboutCard />   
-            <AboutCard />   
-            <AboutCard />   
-        </Carousel>
 
-        <div className='button-container'>
-            <a href="/aboutUs" className='more-button'>Saiba Mais <DoubleRightOutlined /></a>
+
+export default function AboutContainer({dataSource,darkTheme}) {
+
+    const desktopContent = (
+        <div className='main-about-container'>
+            <div className='about-container'>
+                {/* colocar um map a partir de um array aq */}
+                
+                {dataSource.map(item => <AboutCard title={item.title} description={item.description} imageUrl={item.imageUrl}/>)}
+            </div>
+            <div className='button-container'>
+                <a href="/aboutUs" className={darkTheme ? 'more-button-dark-themed': 'more-button'}>Saiba Mais <DoubleRightOutlined /></a>
+            </div>
         </div>
-    </>
-);
+    );
+    
 
-export default function AboutContainer({dataFont}) {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+    const mobileContent = (
+        <>
+            <Carousel draggable dots={false} arrows>
+                {/* colocar um map a partir de um array aq */}
+                {dataSource.map(item => <AboutCard title={item.title} description={item.description} imageUrl={item.imageUrl}/>)}   
+            </Carousel>
+    
+            <div className='button-container'>
+                <a href="/aboutUs" className={darkTheme ? 'more-button-dark-themed': 'more-button'}>Saiba Mais <DoubleRightOutlined /></a>
+            </div>
+        </>
+    );
+
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
 
     useEffect(() => {
         const updateValues = () => {
-            setIsMobile(window.innerWidth <= 750);
+            setIsMobile(window.innerWidth <= 850);
         };
+
+
+        console.log('Darktheme no aboutContainer: ' + darkTheme)
 
         window.addEventListener("resize", updateValues);
         updateValues(); // Ensure it updates immediately when the effect runs

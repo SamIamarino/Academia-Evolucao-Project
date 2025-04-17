@@ -32,7 +32,22 @@
 }
 
 .more-button{
-    width: 30%;
+    width: 100%;
+    border: 2px solid #1C6CB4;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.more-button:hover{
+    background-color: #1C6CB4;
+    color: white;
+}
+
+.more-button-dark-themed{
+    width: 100%;
     border: 2px solid #04FC04;
     padding: 10px;
     border-radius: 15px;
@@ -40,7 +55,7 @@
     background-color: #1C1C1C;
     color: white;
 }
-.more-button:hover{
+.more-button-dark-themed:hover{
     background-color: #04FC04;
     color: black;
 }
@@ -58,7 +73,7 @@
 
 
 /*Mobile Config*/
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .about-title{
         margin: 50px 150px 0px 50px;
         font-size: 25px;
@@ -74,6 +89,9 @@
         flex-direction: column;
     }
     .more-button{
+        width: 80%;
+    }
+    .more-button-dark-themed{
         width: 80%;
     }
 }

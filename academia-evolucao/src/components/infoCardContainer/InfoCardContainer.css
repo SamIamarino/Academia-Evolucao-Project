@@ -1,0 +1,32 @@
+.main-info-card-container{
+    margin-top: 15vh;
+    height: 45vh;
+    margin-bottom: 15vh;
+}
+
+.info-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-card-container-title{
+    margin: 120px 150px 50px 300px;
+    font-size: 40px;
+}
+
+.white-font{
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .info-card-container-title{
+        margin: 50px 150px 0px 50px;
+        font-size: 25px;
+    }
+
+    .info-card-container{
+        display: block;
+    }
+}

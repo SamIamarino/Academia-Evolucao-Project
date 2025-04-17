@@ -1,13 +1,28 @@
 .mobile-app-container{
     /* border: 1px solid white; */
+    /* background-color: white; */
     height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .mobile-app-main-container{
     /* border: 1px solid white; */
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    width: 50%;
+    height: 65%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+
+.mobile-app-main-container-dark-themed{
     color: white;
     border-radius: 25px;
     width: 50%;
@@ -17,6 +32,12 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+
+.mkt-app-title{
+    color:white;
+    font-size: 30px;
+    margin-right: 125px;
 }
 
 .mobile-item-list{
@@ -101,5 +122,9 @@
         color: white;
         padding: 80px;
         border-radius: 20px;
+    }
+    .mkt-app-title{
+        font-size: 30px;
+        margin: 0px 150px 30px 50px;
     }
 }

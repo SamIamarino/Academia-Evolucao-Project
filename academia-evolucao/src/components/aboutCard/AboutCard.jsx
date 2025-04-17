@@ -4,7 +4,7 @@ import pesoBranco from '../../assets/fotosCarrousel/pesoBranco.png'
 import { useState, useEffect } from 'react';
 
 
-export default function AboutCard({photoUrl, cardTitle, cardText, cardAlt}){
+export default function AboutCard({imageUrl, title, description}){
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
 
      useEffect(() => {
@@ -29,12 +29,12 @@ export default function AboutCard({photoUrl, cardTitle, cardText, cardAlt}){
     return(
         <div className={isDarkTheme ? 'about-card-dark-themed'  : 'about-card'}>
             <div className='about-card-header'>
-                <h1 className='about-card-title'>{cardTitle} Equipamentos de qualidade</h1>
-                <img src={isDarkTheme ? pesoBranco : peso} alt={cardAlt} className='icon'/>
+                <h1 className='about-card-title'>{title}</h1>
+                <img src={isDarkTheme ? pesoBranco : peso} alt='teste' className='icon'/>
             </div>
 
             <div className='about-card-body'>
-                <h3>{cardText}  testecaasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaard</h3>
+                <h3 className='about-card-description oswald-font'>{description}</h3>
             </div>
         </div>
     );

@@ -1,0 +1,87 @@
+.info-card{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #1C6CB4;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info-card-dark-themed{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #04FC04;
+    background-color: #191919;
+    border-radius: 20px;
+    box-shadow: rgba(83, 83, 83, 0.35) 0px 5px 15px;
+}
+
+.info-card-header{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-card-hr{
+    border: 1px solid #1C6CB4;
+    background-color: #1C6CB4;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.info-card-hr-dark-themed{
+    border: 1px solid #04FC04;
+    background-color: #04FC04;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.info-card-header-dark-themed{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.info-card-title{
+    font-size: 40px;
+    /* text-align: center; */
+}
+
+.info-card-body{
+    text-align: center;
+}
+.info-card-body-dark-themed{
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .info-card{
+        height: 280px;
+        width: 280px;
+
+        /* Centralizar */
+        margin: auto;
+        margin-top: 50px;
+
+        /* Arrumar por conta do box shadow */
+        margin-bottom: 25px;
+    }
+
+    .info-card-dark-themed{
+        height: 280px;
+        width: 280px;
+
+        /* Centralizar */
+        margin: auto;
+        margin-top: 50px;
+
+        /* Arrumar por conta do box shadow */
+        margin-bottom: 25px;
+    }
+}

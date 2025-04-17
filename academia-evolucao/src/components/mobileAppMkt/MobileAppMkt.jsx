@@ -3,11 +3,11 @@ import celularFoto from '../../assets/celular-app.png'
 import calularFotoSemSombra from '../../assets/celular_without-shadow.png'
 import { useState, useEffect } from 'react';
 
+export default function MobileAppMkt({darkTheme}){
 
-
-const desktopContent = (
+    const desktopContent = (
         <div className='mobile-app-container'>
-            <div className='mobile-app-main-container'>
+            <div className={darkTheme ? 'mobile-app-main-container-dark-themed' : 'mobile-app-main-container'}>  
                 <div className='mobile-text-content'>
                     {/* talvez tenha q colocar td em div aqui */}
                     <div>
@@ -32,21 +32,19 @@ const desktopContent = (
         </div>
         );
 
-const mobileContent = (
-    <div className='mobile-content-container'>
-        <img src={calularFotoSemSombra} alt="Imagem Celular" className='smartphone-img'/>
-        <ul className='mobile-item-list'>
-            <li>Informações</li>
-            <li>Horários</li>
-            <li>Reserva de Aulas</li>
-            <li>Atualizações</li>
-            <li>Eventos</li>
-        </ul>
-    </div>
-);
-
-
-export default function MobileAppMkt(){
+    const mobileContent = (
+        <div className='mobile-content-container'>
+            <h1 className='mkt-app-title'>Utilize Tecnofit nos seus treinos: </h1>
+            <img src={calularFotoSemSombra} alt="Imagem Celular" className='smartphone-img'/>
+            <ul className='mobile-item-list'>
+                <li>Informações</li>
+                <li>Horários</li>
+                <li>Reserva de Aulas</li>
+                <li>Atualizações</li>
+                <li>Eventos</li>
+            </ul>
+        </div>
+    );
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 

@@ -1,8 +1,8 @@
-import AboutContainer from "../components/aboutContainer/AboutContainer";
 import Header from "../components/header/Header"
 import PhotoCarrousel from "../components/photoCarrousel/PhotoCarrousel";
-import { CARROUSEL_IMAGES } from "../data";
+import { CARROUSEL_IMAGES,INFO_CARD_CONTAINER_ABOUT_PAGE } from "../data";
 import { useEffect, useState } from "react";
+import InfoCardContainer from "../components/infoCardContainer/InfoCardContainer";
 export default function AboutPage(){
 
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
@@ -35,10 +35,10 @@ export default function AboutPage(){
 
     return(
          <>
-                    <Header />
-                    <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
-                    <AboutContainer />
-                    <a href='/'>Voltar para home</a>
-                </>
+            <Header toggleNavBar={false}/>
+            <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>
+            <InfoCardContainer dataSource={INFO_CARD_CONTAINER_ABOUT_PAGE} toggleTitle={false} darkTheme={isDarkTheme}/>
+            
+          </>
     );
 }

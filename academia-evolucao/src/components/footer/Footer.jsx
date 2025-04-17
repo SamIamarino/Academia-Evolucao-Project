@@ -11,7 +11,7 @@ export default function Footer(){
                 <img src={logoFooter} alt="Logo evolução" className='logo-footer'/>
 
                 <div className='text-container'> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore</p>
+                    <p>Nossas redes sociais: </p>
                 </div>
 
                 <div className='icon-container' id='contatos'>
@@ -22,7 +22,7 @@ export default function Footer(){
                     <a href="https://www.instagram.com/evolucaoitapira/">
                         <img src={instaLogo} alt="insta-icon" className='midia-icon'/>
                     </a>
-                    <a href="https://wa.me/38602440">
+                    <a href="https://wa.me/message/JIYIDMVOUKSKJ1">
                         <img src={whatsLogo} alt="whats-icon" className='midia-icon'/>
                     </a>
                 </div>

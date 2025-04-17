@@ -5,7 +5,7 @@ import logoMobileDark from '../../assets/logos/logo-verde-brancoMobile.png';
 import logoDesktopDark from '../../assets/logos/logo-verde-brancoDesktop.png';
 import { useState, useEffect } from 'react';
 
-export default function Header(){
+export default function Header({toggleNavBar}){
 
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
@@ -51,16 +51,17 @@ export default function Header(){
        <a href="/">
         <img src={logo} alt="logo-evolução" className="logo"/>    
        </a>
-        <div>
+        {toggleNavBar ? 
+        <nav>
             <ul className='link-container'>
                 {/* Não sei se guardar esse ternario numa variavel e passar seria mais legivel */}
                 <li><a href="#nossoEspaco" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Nosso Espaço</a></li>
-                <li><a href="#" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Sobre nós</a></li>
                 <li><a href="#nossosPlanos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Planos</a></li>
+                <li><a href="#horarios" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Horários</a></li>
                 {/* Contatos apenas para teste dps sera tirado */}
                 <li><a href="#contatos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Contato</a></li>
             </ul>    
-        </div>
+        </nav> : undefined}
     </header>
     );
 }

@@ -27,7 +27,7 @@ export default function PlanoCard ({plano,description,imagemPlano}){
        }, []);
 
     return(
-        <div className="plano-card" >
+        <div className="plano-card">
             <div>
                 <img src={imagemPlano} alt="Imagem plano" className='plano-img'/>
                 <div className={isDarkTheme ? 'plano-card-header-dark-themed':'plano-card-header' }>
@@ -36,9 +36,9 @@ export default function PlanoCard ({plano,description,imagemPlano}){
 
             </div>
             <div className={isDarkTheme ? 'plano-card-body-dark-themed' : 'plano-card-body'}>
-                <p className='oswald-font'>{description}</p>
+                <p className='oswald-font plano-card-content-paragraph'>{description}</p>
                 <hr />
-                <WhatsAppButton>Assine aqui</WhatsAppButton>
+                <WhatsAppButton darkTheme={isDarkTheme}> Assine aqui </WhatsAppButton>
             </div>
         </div>
     );

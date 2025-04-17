@@ -5,14 +5,14 @@ import './PhotoCarrousel.css'
 
 const carouselStyleDesktop = {
   width: '100%',       // Full width
-  height: '500px',   // Increase the height
+  height: '600px',   // Increase the height
 };
 
-const imageStyle = {
-  width: '100%',
-  height: '500px',
-  objectFit: 'cover', // E;nsures images scale properly
-};
+// const imageStyle = {
+//   width: '100%',
+//   height: '800px',
+//   objectFit: 'cover', // E;nsures images scale properly
+// };
 
 const carouselStyleMobile = {
   width: '100%',       // Full width
