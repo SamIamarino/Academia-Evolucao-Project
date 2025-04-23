@@ -60,10 +60,16 @@
     color: white;
 }
 
+.info-card-description{
+    display: block;
+    padding: 20px;
+    text-align: start;
+}
+
 @media (max-width: 850px) {
     .info-card{
-        height: 280px;
-        width: 280px;
+        height: 290px;
+        width: 290px;
 
         /* Centralizar */
         margin: auto;
@@ -74,8 +80,8 @@
     }
 
     .info-card-dark-themed{
-        height: 280px;
-        width: 280px;
+        height: 290px;
+        width: 290px;
 
         /* Centralizar */
         margin: auto;
