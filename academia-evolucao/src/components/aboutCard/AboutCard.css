@@ -6,7 +6,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 0;
     /* only for puposes of styling */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
