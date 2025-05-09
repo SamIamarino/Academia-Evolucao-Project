@@ -10,7 +10,7 @@ export default function Footer(){
             <div className='footer-card'>
                 <img src={logoFooter} alt="Logo evolução" className='logo-footer'/>
 
-                <div className='text-container'> 
+                <div className='footer-text-container'> 
                     <p>Nossas redes sociais: </p>
                 </div>
 

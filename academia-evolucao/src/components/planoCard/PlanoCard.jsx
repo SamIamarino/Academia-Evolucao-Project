@@ -1,5 +1,4 @@
 import './PlanoCard.css'
-import fotoExercicio from '../../assets/carafazendoexercicio.png'
 import { useState,useEffect } from 'react';
 import WhatsAppButton from '../whatsappButton/WhatsappButton';
 // Coloar photoUrl como prop no plano card

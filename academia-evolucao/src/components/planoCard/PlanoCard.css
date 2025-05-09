@@ -5,13 +5,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* only for styling purposes */
+    
     margin: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .plano-img{
     /* vai ter q mexer aqui depois na hora do map das imagens */
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
+    display: block; /* evita espaços abaixo da imagem */
 }
 
 .plano-card-header{
@@ -25,6 +27,7 @@
 .plano-card-header-dark-themed{
     background-color: #04FC04;
     width: 100%;
+    
     text-align: center;
     color: black;
     padding: 10px;
