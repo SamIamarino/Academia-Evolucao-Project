@@ -5,14 +5,9 @@ import './PhotoCarrousel.css'
 
 const carouselStyleDesktop = {
   width: '100%',       // Full width
-  height: '700px',   // Increase the height
+  height: '750px',   // Increase the height
 };
 
-// const imageStyle = {
-//   width: '100%',
-//   height: '800px',
-//   objectFit: 'cover', // E;nsures images scale properly
-// };
 
 const carouselStyleMobile = {
   width: '100%',       // Full width
@@ -20,7 +15,10 @@ const carouselStyleMobile = {
 };
 
 
-export default function PhotoCarrousel({photoArray}){   
+// Precisa arrumar o useffect q ta com o bug de ter que dar refresh na página pra mudar estilo do carrousel. 
+// Só transformar em estado com a verificação certa.
+
+export default function PhotoCarrousel({photoArray,mobile}){   
 
   const isMobile = window.innerWidth <= 750 ? true : false;
 
@@ -40,7 +38,7 @@ export default function PhotoCarrousel({photoArray}){
   // Passar array como prop e dar um map dentro do carrousel.
 
     return(
-      <div style={carouselStyle} className="carrousel">
+      <div style={mobile ? carouselStyleMobile : carouselStyleDesktop} className="carrousel">
         <Carousel dotPosition='bottom' draggable dots={isMobile ? false : true}>
           {
             photoArray.map( (item) => 

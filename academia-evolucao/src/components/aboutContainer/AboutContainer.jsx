@@ -6,7 +6,7 @@ import { DoubleRightOutlined } from '@ant-design/icons'
 
 
 
-export default function AboutContainer({dataSource,darkTheme}) {
+export default function AboutContainer({dataSource,darkTheme,mobile}) {
 
     const desktopContent = (
         <div className='main-about-container'>
@@ -35,31 +35,9 @@ export default function AboutContainer({dataSource,darkTheme}) {
         </>
     );
 
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
-
-    useEffect(() => {
-        const updateValues = () => {
-            setIsMobile(window.innerWidth <= 850);
-        };
-
-
-        console.log('Darktheme no aboutContainer: ' + darkTheme)
-
-        window.addEventListener("resize", updateValues);
-        updateValues(); // Ensure it updates immediately when the effect runs
-
-        return () => {
-            window.removeEventListener("resize", updateValues);
-        };
-    }, []); // Run only once on mount
-
-    console.log(isMobile);
-
-
     return (
         <div className='about-container'>
-            {isMobile ? mobileContent : desktopContent}
+            {mobile ? mobileContent : desktopContent}
         </div>
     );
 }

@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 import { Carousel } from 'antd';
 // import { PLANO_CONTENT } from '../../data.js';
 
-export default function PlanosContainer({dataSource}){
+export default function PlanosContainer({dataSource, mobile}){
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
     const [content, setContent] = useState(window.innerWidth <= 750 ? true : false);
         
@@ -45,7 +45,7 @@ export default function PlanosContainer({dataSource}){
     return(
         <div className="plano-container" id="nossosPlanos">
             <h1 className={  isDarkTheme ? 'plano-title-dark-themed' : 'plano-title'}>NOSSOS PLANOS: </h1>
-            { content ?  mobileContent: desktopContent }
+            { mobile ?  mobileContent : desktopContent }
         </div>
     );
 }

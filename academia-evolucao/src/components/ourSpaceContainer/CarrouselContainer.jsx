@@ -5,33 +5,12 @@ import './OurSpaceContainer.css';
 // Provavelmente vai ser melhor mudar o nome desse component mais pra frente. 
 //Vai ter uma variavel para receber as infos do data.js aqui.
 
-export default function CarrouselContainer({title, dataSource}){
-
-    const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-    useEffect(() => {
-           const updateValues = () => {
-
-               const darkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;    
-               setIsDarkTheme(darkTheme);
-
-           };
-   
-           updateValues(); // Executa na inicialização
-   
-           const themeWatcher = window.matchMedia("(prefers-color-scheme: dark)");
-           themeWatcher.addEventListener("change", updateValues);
-   
-           return () => {
-               window.removeEventListener("resize", updateValues);
-               themeWatcher.removeEventListener("change", updateValues);
-           };
-       }, []);
+export default function CarrouselContainer({title, dataSource,mobile,darkTheme}){
 
     return(
         <>
-            <h1 className={isDarkTheme ? 'our-space-title-dark-themed' : 'our-space-title'} style={{marginBottom: "40px"}} id="nossoEspaco">{title}</h1>
-            <PhotoCarrousel photoArray={CARROUSEL_OUR_TEAM}/>
+            <h1 className={darkTheme ? 'our-space-title-dark-themed' : 'our-space-title'} style={{marginBottom: "40px"}} id="nossoEspaco">{title}</h1>
+            <PhotoCarrousel photoArray={dataSource} mobile={mobile}/>
         </>
     );
 }
