@@ -78,7 +78,7 @@ const App = () => {
       <CarrouselContainer title={"ESTAMOS PREPARADOS PARA TE AUXILIAR: "}/>
       <MobileAppMkt darkTheme={isDarkTheme}/>
       <TreineAquiContainer darkTheme={isDarkTheme}/>
-      <InfoCardContainer dataSource={INFO_CARD_CONTAINER_MAIN_PAGE} darkTheme={isDarkTheme} title={"Horarios"} toggleTitle={true}/>
+      <InfoCardContainer dataSource={INFO_CARD_CONTAINER_MAIN_PAGE} darkTheme={isDarkTheme} title={"Horarios: "} toggleTitle={true}/>
       {/* Resolver dps problema do whats */}
       <FloatButton  href="https://wa.me/message/JIYIDMVOUKSKJ1" icon={<WhatsAppOutlined />} style={{ backgroundColor: '#25D366'}} rowClassName={() => 'dark-row'}/>
       <Footer />
