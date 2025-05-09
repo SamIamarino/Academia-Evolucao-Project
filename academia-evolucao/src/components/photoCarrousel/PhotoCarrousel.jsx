@@ -5,7 +5,7 @@ import './PhotoCarrousel.css'
 
 const carouselStyleDesktop = {
   width: '100%',       // Full width
-  height: '600px',   // Increase the height
+  height: '700px',   // Increase the height
 };
 
 // const imageStyle = {
