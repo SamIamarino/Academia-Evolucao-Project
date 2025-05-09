@@ -1,26 +1,16 @@
-import Time1 from './assets/timeCarousel/Time1cropado.png';
-import Time2 from './assets/timeCarousel/Time2.png';
-import Time3 from './assets/timeCarousel/Time3.png';
-import Time4 from './assets/timeCarousel/Time4.png';
-
 import AboutIcon1 from './assets/iconesAboutCard/CheckIcon.png';
 import AboutIcon2 from './assets/iconesAboutCard/halterIcon.png';
 import AboutIcon3 from './assets/iconesAboutCard/littleMen.png';
 
-import AboutIcon1Dark from './assets/iconesAboutCard/CheckIcon.png';
-import AboutIcon2Dark from './assets/iconesAboutCard/halterIcon.png';
-import AboutIcon3Dark from './assets/iconesAboutCard/littleMen.png';
+import AboutIcon1Dark from './assets/iconesAboutCard/IconDarkTheme1.png';
+import AboutIcon2Dark from './assets/iconesAboutCard/IconDarkTheme2.png';
+import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 
-import photoPeso from './assets/carafazendoexercicio.png';
-import logoPeso from './assets/fotosCarrousel/peso.png';
 import fotoComTexto1 from './assets/Group 81.png';
 export const CARROUSEL_IMAGES = [
 
     {
         imageUrl: fotoComTexto1,
-    },
-    {
-        imageUrl: photoPeso,
     },
     {
         imageUrl: fotoComTexto1,
@@ -34,16 +24,16 @@ export const CARROUSEL_IMAGES = [
 export const CARROUSEL_OUR_SPACE_FOTOS = [
 
   {
-      imageUrl: fotoComTexto1,
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746816810/FotoLocal_1_s1a2ym.png",
   },
   {
-      imageUrl: photoPeso,
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746816810/FotoLocal_3_rupm9e.png",
   },
   {
-      imageUrl: fotoComTexto1,
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746816810/FotoLocal_2_kfkbwa.png",
   },
   {
-      imageUrl: photoPeso,
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746816810/FotoLocal_4_xqvopy.png",
   }
 
 ];
@@ -51,42 +41,19 @@ export const CARROUSEL_OUR_SPACE_FOTOS = [
 export const CARROUSEL_OUR_TEAM = [
 
   {
-      imageUrl: Time1
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817238/time_1_haivtd.png"
   },
   {
-      imageUrl: Time2
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817238/time_2_iutoye.png"
   },
   {
-      imageUrl: Time3
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817238/time_3_wtu0ud.png"
   },
-  {
-      imageUrl: Time4
-  }
 
 ];
 
 
 export const ABOUT_CARD_CONTENT = [
-
-  {
-    imageUrl: AboutIcon1,
-    title: 'Equipamentos de qualidade',
-    description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
-  },
-  {
-    imageUrl: AboutIcon2 ,
-    title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! O professor sempre estará disposto a ajudar e trocar seu treino'
-  },
-  {
-    imageUrl: AboutIcon3,
-    title: 'Aulas Inclusas',
-    description: 'Em todos os nossos planos estão inclusas as aulas de bike spinning e ginástica, além da musculação.'
-  }
-
-];
-
-export const ABOUT_CARD_CONTENT_DARK_THEME = [
 
   {
     imageUrl: AboutIcon1Dark,
@@ -106,22 +73,42 @@ export const ABOUT_CARD_CONTENT_DARK_THEME = [
 
 ];
 
+export const ABOUT_CARD_CONTENT_DARK_THEME = [
+
+  {
+    imageUrl: AboutIcon1,
+    title: 'Equipamentos de qualidade',
+    description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
+  },
+  {
+    imageUrl: AboutIcon2,
+    title: 'Consultoria Presencial' ,
+    description: 'Nosso atendimento consiste na consultoria presencial! O professor sempre estará disposto a ajudar e trocar seu treino'
+  },
+  {
+    imageUrl: AboutIcon3,
+    title: 'Aulas Inclusas',
+    description: 'Em todos os nossos planos estão inclusas as aulas de bike spinning e ginástica, além da musculação.'
+  }
+
+];
+
 
 
 export const PLANO_CONTENT = [
   
     {
       plano: 'Semestral',
-      imagemPlano: photoPeso, 
+      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_2_fga9ph.png", 
       description: 'Plano semestral, parcelado em 6 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartão todos os planos contém contrato.'},
     {
       plano: 'Trimestral',
-      imagemPlano: photoPeso, 
+      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_1_cntk4q.png", 
       description: 'Plano trimestral, parcelado em 3 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartão todos os planos contém contrato.'
     },
     {
       plano: 'Mensal',
-      imagemPlano: photoPeso, 
+      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_3_ajhpcr.png", 
       description: 'Plano mensal no valor de r$ 130,00, o aluno pode frequentar a academia por um mês todos os planos contém contrato.'
     }
 
