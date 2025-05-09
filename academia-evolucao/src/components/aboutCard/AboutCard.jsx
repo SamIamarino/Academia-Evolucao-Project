@@ -30,7 +30,7 @@ export default function AboutCard({imageUrl, title, description}){
         <div className={isDarkTheme ? 'about-card-dark-themed'  : 'about-card'}>
             <div className='about-card-header'>
                 <h1 className='about-card-title'>{title}</h1>
-                <img src={isDarkTheme ? pesoBranco : peso} alt='teste' className='icon'/>
+                <img src={imageUrl} alt='teste' className='icon'/>
             </div>
 
             <div className='about-card-body'>
