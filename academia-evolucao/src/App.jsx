@@ -88,6 +88,7 @@ const App = () => {
         darkTheme={isDarkTheme} 
         title="Horarios:" 
         toggleTitle={true} 
+        mobile={isMobile}
       />
 
       {/* Resolver depois problema do WhatsApp */}

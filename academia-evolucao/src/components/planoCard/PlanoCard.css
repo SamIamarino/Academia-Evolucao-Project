@@ -80,4 +80,8 @@
         /* Bug do box-shadow */
         margin-bottom: 20px;
     }
+    .plano-card-hr{
+        margin-top: 30px;
+        
+    }
 }
