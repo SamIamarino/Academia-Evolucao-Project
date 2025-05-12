@@ -1,7 +1,6 @@
 
 export default function MainPage(){
     return(
-
         <>
             <Header />
             <PhotoCarrousel photoArray={CARROUSEL_IMAGES}/>

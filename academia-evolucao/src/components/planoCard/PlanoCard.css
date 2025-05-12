@@ -73,8 +73,8 @@
 
 @media (max-width: 750px ) {
     .plano-card{
-        width: 280px;
-        height: 600px;
+        width: 300px;
+        height: 550px;
         /* height: 550px; */
         margin: auto;
         /* Bug do box-shadow */
