@@ -29,6 +29,13 @@
     font-style: normal;
 }
 
+.manrope-font {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 body{
     background-color: rgba(235, 235, 235, 0.568);
 }

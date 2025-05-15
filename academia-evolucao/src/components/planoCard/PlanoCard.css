@@ -1,11 +1,10 @@
 .plano-card{
-    width: 350px;
+    max-width: 350px;
     /* background-color: white; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     margin: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -27,7 +26,6 @@
 .plano-card-header-dark-themed{
     background-color: #04FC04;
     width: 100%;
-    
     text-align: center;
     color: black;
     padding: 10px;
@@ -70,6 +68,25 @@
 }
 
 /* arrumar os padding no responsivo */
+
+@media (max-width: 1250px) {
+    .plano-card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .plano-card-body{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .plano-card-body{
+        font-size: 5px;
+    }
+}
 
 @media (max-width: 750px ) {
     .plano-card{

@@ -63,6 +63,7 @@
 .info-card-description{
     display: block;
     padding: 20px;
+    padding-top: 0px;
     text-align: start;
 }
 
@@ -89,5 +90,9 @@
 
         /* Arrumar por conta do box shadow */
         margin-bottom: 25px;
+    }
+
+    .info-card-description{
+        font-size: 18px;
     }
 }

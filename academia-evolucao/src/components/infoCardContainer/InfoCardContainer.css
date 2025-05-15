@@ -1,7 +1,7 @@
 .main-info-card-container{
     margin-top: 15vh;
     height: 45vh;
-    margin-bottom: 15vh;
+    margin-bottom: 20px;
 }
 
 .info-card-container{
@@ -24,6 +24,16 @@
     .info-card-container-title{
         margin: 50px 150px 0px 50px;
         font-size: 25px;
+    }
+
+    .info-card-container{
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-info-card-container{
+        margin-top: 4vh;
     }
 
     .info-card-container{
