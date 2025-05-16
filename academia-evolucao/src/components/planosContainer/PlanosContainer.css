@@ -24,6 +24,13 @@
 }
 
 
+
+@media (max-width: 1300px) {
+    .plano-card-container{
+        gap: 0px;
+    }
+    
+}
 @media (max-width: 1100px) {
     .plano-card-container{
         gap: 0px;

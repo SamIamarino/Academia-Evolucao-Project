@@ -6,19 +6,16 @@ import AboutIcon1Dark from './assets/iconesAboutCard/IconDarkTheme1.png';
 import AboutIcon2Dark from './assets/iconesAboutCard/IconDarkTheme2.png';
 import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 
-import fotoComTexto1 from './assets/Group 81.png';
+  // {
+  //     imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746535241/IMG_6611-min_pl07ru.png",
+  // }
+
 export const CARROUSEL_IMAGES = [
 
     {
-        imageUrl: fotoComTexto1,
-    },
-    {
-        imageUrl: fotoComTexto1,
-    },
-    {
-        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746535241/IMG_6611-min_pl07ru.png",
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747421384/Group_2-min_q8lvwg.png",
     }
-
+   
 ];
 
 export const CARROUSEL_OUR_SPACE_FOTOS = [

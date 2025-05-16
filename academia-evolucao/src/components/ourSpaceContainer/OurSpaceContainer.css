@@ -9,7 +9,7 @@
     color: white;
 }
 
-@media (max-width:750px){
+@media (max-width: 850px){
     .our-space-title{
         margin: 110px 150px 30px 50px;
         font-size: 25px;

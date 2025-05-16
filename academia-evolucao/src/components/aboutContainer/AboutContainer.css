@@ -80,6 +80,7 @@
         width: 150px;
     }
     .about-container{
+        /*Bug do empilhamento*/
         display: block;
     }
     .button-container{

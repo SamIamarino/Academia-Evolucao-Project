@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+.list-item-dark-themed{
+    color: white;
+}
+.list-item{
+    color: black;
+}
 
 .mobile-app-main-container{
     /* border: 1px solid white; */
@@ -34,10 +40,23 @@
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 }
 
-.mkt-app-title{
+.mkt-app-title-dark-themed{
     color:white;
     font-size: 30px;
     margin-right: 125px;
+}
+.mkt-app-title{
+    color:black;
+    font-size: 30px;
+    margin-right: 125px;
+}
+
+.mobile-item-list-dark{
+    /* border: 1px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px; 
+    color: black;
+    padding: 80px;
+    border-radius: 20px;
 }
 
 .mobile-item-list{
@@ -100,7 +119,7 @@
 
 
 /* Parte do component mobile só */
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .mobile-content-container{
      display: flex;
      flex-direction: column;
@@ -127,4 +146,9 @@
         font-size: 30px;
         margin: 0px 150px 30px 50px;
     }
+    .mkt-app-title-dark-themed{
+        font-size: 30px;
+        margin: 0px 150px 30px 50px;
+    }
+
 }

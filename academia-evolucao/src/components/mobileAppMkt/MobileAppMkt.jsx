@@ -1,9 +1,8 @@
 import './MobileAppMkt.css';
 import celularFoto from '../../assets/celular-app.png'
 import calularFotoSemSombra from '../../assets/celular_without-shadow.png'
-import { useState, useEffect } from 'react';
 
-export default function MobileAppMkt({darkTheme}){
+export default function MobileAppMkt({darkTheme,mobile}){
 
     const desktopContent = (
         <div className='mobile-app-container'>
@@ -18,7 +17,7 @@ export default function MobileAppMkt({darkTheme}){
                     </div>
                     <div>
                         <ul className='mobile-item-list'>
-                            <li>Informações</li>
+                            <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Informações</li>
                             <li>Horários</li>
                             <li>Reserva de Aulas</li>
                             <li>Atualizações</li>
@@ -34,37 +33,21 @@ export default function MobileAppMkt({darkTheme}){
 
     const mobileContent = (
         <div className='mobile-content-container'>
-            <h1 className='mkt-app-title'>Utilize Tecnofit nos seus treinos: </h1>
+            <h1 className={darkTheme ? 'mkt-app-title-dark-themed' : 'mkt-app-title'}>Utilize Tecnofit nos seus treinos: </h1>
             <img src={calularFotoSemSombra} alt="Imagem Celular" className='smartphone-img'/>
             <ul className='mobile-item-list'>
-                <li>Informações</li>
-                <li>Horários</li>
-                <li>Reserva de Aulas</li>
-                <li>Atualizações</li>
-                <li>Eventos</li>
+                <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Informações</li>
+                <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Horários</li>
+                <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Reserva de Aulas</li>
+                <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Atualizações</li>
+                <li className={darkTheme ? 'list-item-dark-themed' : 'list-item'}>Eventos</li>
             </ul>
         </div>
     );
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
-
-    useEffect(() => {
-        const updateValues = () => {
-            setIsMobile(window.innerWidth <= 750);
-        };
-
-        window.addEventListener("resize", updateValues);
-        updateValues();
-
-        return () => {
-            window.removeEventListener("resize", updateValues);
-        };
-    }, []); 
-
-
     return(
         <>
-            {isMobile ? mobileContent : desktopContent}
+            {mobile ? mobileContent : desktopContent}
         </>
     );
 }

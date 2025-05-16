@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 850px) {
+    .main-info-card-container{
+        margin-top: 4vh;
+    }
     .info-card-container-title{
         margin: 50px 150px 0px 50px;
         font-size: 25px;
@@ -31,12 +34,10 @@
     }
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .main-info-card-container{
         margin-top: 4vh;
     }
 
-    .info-card-container{
-        display: block;
-    }
-}
+    
+} */

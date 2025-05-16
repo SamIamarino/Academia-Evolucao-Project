@@ -23,12 +23,12 @@ import {
 } from './data.js';
 
 const App = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
   const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
 
   useEffect(() => {
     const updateValues = () => {
-      const mobile = window.innerWidth <= 750;
+      const mobile = window.innerWidth <= 850;
       const darkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
       setIsMobile(mobile);
@@ -70,6 +70,7 @@ const App = () => {
       <PlanosContainer 
         dataSource={PLANO_CONTENT} 
         mobile={isMobile} 
+        darkTheme={isDarkTheme}
       />
 
       <CarrouselContainer 
@@ -79,7 +80,7 @@ const App = () => {
         darkTheme={isDarkTheme}
       />
 
-      <MobileAppMkt darkTheme={isDarkTheme} />
+      <MobileAppMkt darkTheme={isDarkTheme} mobile={isMobile}/>
 
       <TreineAquiContainer darkTheme={isDarkTheme} />
 
