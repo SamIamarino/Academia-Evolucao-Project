@@ -1,6 +1,6 @@
 import Header from "../components/header/Header"
 import PhotoCarrousel from "../components/photoCarrousel/PhotoCarrousel";
-import { CARROUSEL_IMAGES,INFO_CARD_CONTAINER_ABOUT_PAGE } from "../data";
+import { CARROUSEL_IMAGES_HISTORIA,INFO_CARD_CONTAINER_ABOUT_PAGE } from "../data";
 import { useEffect, useState } from "react";
 import InfoCardContainer from "../components/infoCardContainer/InfoCardContainer";
 import TextContainer from "../components/textContainer/TextContainer";
@@ -39,7 +39,7 @@ export default function AboutPage(){
     return(
          <>
             <Header toggleNavBar={false}/>
-            <PhotoCarrousel photoArray={CARROUSEL_IMAGES} mobile={isMobile}/>
+            <PhotoCarrousel photoArray={CARROUSEL_IMAGES_HISTORIA} mobile={isMobile}/>
             <InfoCardContainer dataSource={INFO_CARD_CONTAINER_ABOUT_PAGE} toggleTitle={false} darkTheme={isDarkTheme} mobile={isMobile}/>
             <TextContainer 
             title={"Nossa Historia: "}

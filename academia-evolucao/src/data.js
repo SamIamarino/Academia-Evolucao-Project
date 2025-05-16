@@ -13,9 +13,24 @@ import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 export const CARROUSEL_IMAGES = [
 
     {
-        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747421384/Group_2-min_q8lvwg.png",
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747423834/evoluindo2006textocert-min_vqpkbr.png",
     }
    
+];
+
+export const CARROUSEL_IMAGES_HISTORIA = [
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424321/academiaHistoria_4_j5k6g3.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424329/academiaHistoria_3_kjb0qp.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424328/academiaHistoria_2_jaojjh.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424320/academiaHistoria_1_q4vu2i.png",
+    },
 ];
 
 export const CARROUSEL_OUR_SPACE_FOTOS = [
