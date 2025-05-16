@@ -13,9 +13,11 @@ export default function InfoCardContainer({dataSource, darkTheme, title, toggleT
     );
 
     const mobileContent = (
-        <Carousel draggable dots={false} arrows>
-            {dataSource.map( item => <InfoCard title={item.title} description={item.description} darkTheme={darkTheme}/>)}
-        </Carousel>
+        <div className='main-info-card-container'>
+            <Carousel draggable dots={false} arrows>
+                {dataSource.map( item => <InfoCard title={item.title} description={item.description} darkTheme={darkTheme}/>)}
+            </Carousel>
+        </div>
     );
 
     return(
