@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: '/aboutUs',
     element: <AboutPage />
   }
-]);
+],{ basename: '/Academia-Evolucao-Project/' });
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
