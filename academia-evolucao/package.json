@@ -9,8 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && cp build/index.html build/404.html",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && npm run copy404",
+    "deploy": "gh-pages -d build",
+    "copy404": "copyfiles -f build/index.html build/404.html"
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.1",
