@@ -1,7 +1,7 @@
 import './AboutContainer.css';
 import AboutCard from '../aboutCard/AboutCard';
 import { Carousel } from 'antd';
-import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { DoubleRightOutlined } from '@ant-design/icons'
 
 
@@ -30,7 +30,9 @@ export default function AboutContainer({dataSource,darkTheme,mobile}) {
             </Carousel>
     
             <div className='button-container'>
-                <a href="/aboutUs" className={darkTheme ? 'more-button-dark-themed': 'more-button'}>Saiba Mais <DoubleRightOutlined /></a>
+                <Link to="/aboutUs" className={darkTheme ? 'more-button-dark-themed' : 'more-button'}>
+                        Saiba Mais <DoubleRightOutlined />
+                </Link>
             </div>
         </>
     );
