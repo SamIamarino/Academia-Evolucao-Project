@@ -10,7 +10,7 @@ import AboutPage from './pages/AboutPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename="/Academia-Evolucao-Project/">
+    <HashRouter basename="/Academia-Evolucao-Project">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/aboutUs" element={<AboutPage />} />
