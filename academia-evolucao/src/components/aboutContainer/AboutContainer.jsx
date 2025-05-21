@@ -16,7 +16,11 @@ export default function AboutContainer({dataSource,darkTheme,mobile}) {
                 {dataSource.map(item => <AboutCard title={item.title} description={item.description} imageUrl={item.imageUrl}/>)}
             </div>
             <div className='button-container'>
-                <a href="/aboutUs" className={darkTheme ? 'more-button-dark-themed': 'more-button'}>Saiba Mais <DoubleRightOutlined /></a>
+
+                <Link to="/aboutUs" className={darkTheme ? 'more-button-dark-themed' : 'more-button'}>
+                    Saiba Mais <DoubleRightOutlined />
+                </Link>
+
             </div>
         </div>
     );

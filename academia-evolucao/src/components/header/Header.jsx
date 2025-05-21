@@ -4,6 +4,7 @@ import logoMobileLight from '../../assets/logos/logo-azul-pretoMobile.png';
 import logoMobileDark from '../../assets/logos/logo-verde-brancoMobile.png';
 import logoDesktopDark from '../../assets/logos/logo-verde-brancoDesktop.png';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header({toggleNavBar}){
 
@@ -48,9 +49,10 @@ export default function Header({toggleNavBar}){
 
     return(
     <header className={isDarkTheme ? 'dark-themed-header' : undefined}>
-       <a href="/">
+       <Link to="/">
         <img src={logo} alt="logo-evolução" className="logo"/>    
-       </a>
+       </Link>
+       
         {toggleNavBar ? 
         <nav>
             <ul className='link-container'>

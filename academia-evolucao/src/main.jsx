@@ -1,24 +1,20 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />
-  },
-  {
-    path: '/aboutUs',
-    element: <AboutPage />
-  }
-],{ basename: '/Academia-Evolucao-Project/' });
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} /> 
+    <HashRouter basename="/Academia-Evolucao-Project/">
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/aboutUs" element={<AboutPage />} />
+      </Routes>
+    </HashRouter>
   </StrictMode>,
-)
+);
