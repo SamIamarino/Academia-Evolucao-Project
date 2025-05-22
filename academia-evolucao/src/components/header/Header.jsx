@@ -16,16 +16,6 @@ export default function Header({toggleNavBar}){
     // Isso no primeiro render -- verifica qual logo precisa colocar 
     const [logo, setLogo] = useState(isDarkTheme ? (isMobile ? logoMobileDark : logoDesktopDark) : (isMobile ? logoMobileLight : logoDesktopLight));
 
-    function handleClick(e, componentId) {
-        e.preventDefault();
-        const target = document.getElementById(componentId);  // Removed incorrect ${}
-        if (target) {
-            target.scrollIntoView({ 
-                behavior: "smooth",
-                block: "start"       // Better alignment control
-            });
-    }
-}
 
     useEffect(() => {
         const updateValues = () => {
@@ -68,16 +58,10 @@ export default function Header({toggleNavBar}){
         {toggleNavBar ? 
         <nav>
             <ul className='link-container'>
-                {/* Não sei se guardar esse ternario numa variavel e passar seria mais legivel */}
                 <li><ScrollLink to="nossoEspaco" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Nosso Espaço</ScrollLink></li>
                 <li><ScrollLink to="nossosPlanos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Planos</ScrollLink></li>
                 <li><ScrollLink to="horarios" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Horarios</ScrollLink></li>
                 <li><ScrollLink to="contatos" className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'}>Contato</ScrollLink></li>
-
-                {/* <li><a href='#/nossoEspaco' className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'} onClick={() => handleClick("#nossoEspaco")}>Nosso Espaço</a></li>
-                <li><a href='#/nossoPlanos' className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'} onClick={() => handleClick("#nossoPlanos")}>Planos</a></li>
-                <li><a href='#/horarios' className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'} onClick={() => handleClick("#horarios")}>Horários</a></li>
-                <li><a href='#/contatos' className={isDarkTheme ? 'dark-themed-header-a' : 'styled-links'} onClick={() => handleClick("#contatos")}>Contato</a></li> */}
             </ul>    
         </nav> : undefined}
     </header>

@@ -65,6 +65,7 @@ const App = () => {
         mobile={isMobile}
         dataSource={CARROUSEL_OUR_SPACE_FOTOS}
         darkTheme={isDarkTheme}
+        scrollID={"nossoEspaco"}
       />
 
       <PlanosContainer 
@@ -78,6 +79,7 @@ const App = () => {
         mobile={isMobile}
         dataSource={CARROUSEL_OUR_TEAM}
         darkTheme={isDarkTheme}
+        scrollID={"nossaEquipe"}
       />
 
       <MobileAppMkt darkTheme={isDarkTheme} mobile={isMobile}/>
@@ -90,6 +92,7 @@ const App = () => {
         title="Horarios:" 
         toggleTitle={true} 
         mobile={isMobile}
+        scrollID={"horarios"}
       />
 
       {/* Resolver depois problema do WhatsApp */}

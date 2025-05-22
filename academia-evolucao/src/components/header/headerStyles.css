@@ -21,6 +21,7 @@ header{
 
 .dark-themed-header-a:hover{
     color: #04FC04;
+    cursor: pointer;
 }
 
 .link-container{
@@ -39,6 +40,7 @@ header{
 
 .styled-links:hover{
     color: #1C6CB4;
+    cursor: pointer;
 }
 
 .logo{

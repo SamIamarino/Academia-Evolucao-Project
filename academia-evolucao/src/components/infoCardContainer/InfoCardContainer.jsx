@@ -1,8 +1,8 @@
 import './InfoCardContainer.css';
 import InfoCard from '../infoCard/InfoCard.jsx';
-import { Carousel, Divider } from 'antd';
-import { useState , useEffect} from 'react';
-export default function InfoCardContainer({dataSource, darkTheme, title, toggleTitle, mobile}){
+import { Carousel } from 'antd';
+import { Element } from 'react-scroll';
+export default function InfoCardContainer({dataSource, darkTheme, title, toggleTitle, mobile,scrollID}){
 
     const desktopContent = (
         <div className='main-info-card-container'>
@@ -21,9 +21,9 @@ export default function InfoCardContainer({dataSource, darkTheme, title, toggleT
     );
 
     return(
-        <>
+        <Element name={scrollID}>
             {toggleTitle ? <h1 className={darkTheme ? 'info-card-container-title white-font': 'info-card-container-title' } id='horarios'>{title}</h1> : undefined}
             {mobile ? mobileContent : desktopContent}
-        </>
+        </Element>
     );
 }
