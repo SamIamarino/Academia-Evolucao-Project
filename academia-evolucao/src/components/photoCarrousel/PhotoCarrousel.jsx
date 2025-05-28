@@ -22,24 +22,12 @@ export default function PhotoCarrousel({photoArray,mobile}){
 
   const isMobile = window.innerWidth <= 750 ? true : false;
 
-  //É preciso que a DOM renderize novamente para ser trocada o icone.
-      const [carouselStyle, setCarouselStyle] = useState( isMobile ? carouselStyleMobile : carouselStyleDesktop);
-  
-      useEffect(() => {
-          
-          const handleResize = () => {
-            setCarouselStyle(isMobile ? carouselStyleMobile : carouselStyleDesktop);
-          };
-  
-          window.addEventListener("resize", handleResize);
-          return () => window.removeEventListener("resize", handleResize);
-      }, [isMobile]);
 
   // Passar array como prop e dar um map dentro do carrousel.
 
     return(
       <div style={mobile ? carouselStyleMobile : carouselStyleDesktop} className="carrousel">
-        <Carousel dotPosition='bottom' draggable dots={isMobile ? false : true}>
+        <Carousel dotPosition='bottom' draggable dots={isMobile ? false : true} arrows={isMobile ? true : false}>
           {
             photoArray.map( (item) => 
             <div>
