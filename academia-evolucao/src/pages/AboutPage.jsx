@@ -1,12 +1,12 @@
 import Header from "../components/header/Header"
 import PhotoCarrousel from "../components/photoCarrousel/PhotoCarrousel";
-import { CARROUSEL_IMAGES_HISTORIA,INFO_CARD_CONTAINER_ABOUT_PAGE } from "../data";
-import { useEffect, useState } from "react";
 import InfoCardContainer from "../components/infoCardContainer/InfoCardContainer";
 import TextContainer from "../components/textContainer/TextContainer";
+import Footer from "../components/footer/Footer";
+import { CARROUSEL_IMAGES_HISTORIA,INFO_CARD_CONTAINER_ABOUT_PAGE } from "../data";
+import { useEffect, useState } from "react";
 import { FloatButton } from "antd";
 import { WhatsAppOutlined } from "@ant-design/icons";
-import Footer from "../components/footer/Footer";
 
 export default function AboutPage(){
 
@@ -67,7 +67,7 @@ export default function AboutPage(){
               description3={"Nossa metodologia se baseia em etapas de aprendizagem, respeitando a individualidade de cada pessoa e oferecendo o tempo necessário para adaptação e construção do hábito. Isso inclui uma progressão gradual dos treinos, com foco na técnica e em exercícios essenciais, além da educação sobre os princípios do treinamento, mentalidade adequada e aspectos do processo de reabilitação. Tudo com o objetivo de gerar afeto, engajamento e aderência ao programa de treinamento."}
               darkTheme={isDarkTheme}
             />
-            
+
             <FloatButton 
               href="https://wa.me/message/JIYIDMVOUKSKJ1"
               icon={<WhatsAppOutlined />}
