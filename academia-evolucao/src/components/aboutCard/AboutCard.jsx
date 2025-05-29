@@ -34,7 +34,7 @@ export default function AboutCard({imageUrl, title, description}){
             </div>
 
             <div className='about-card-body'>
-                <h3 className='about-card-description oswald-font'>{description}</h3>
+                <h3 className='about-card-description'>{description}</h3>
             </div>
         </div>
     );

@@ -52,6 +52,7 @@
 
 .about-card-description{
     font-size: 20px;
+    white-space: pre-line;
 }
 
 @media( max-width: 850px){
