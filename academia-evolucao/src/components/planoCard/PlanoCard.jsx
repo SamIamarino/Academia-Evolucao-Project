@@ -28,7 +28,7 @@ export default function PlanoCard ({plano,description,imagemPlano}){
     return(
         <div className="plano-card">
             <div>
-                <img src={imagemPlano} alt="Imagem plano" className='plano-img'/>
+                {/* <img src={imagemPlano} alt="Imagem plano" className='plano-img'/> */}
                 <div className={isDarkTheme ? 'plano-card-header-dark-themed':'plano-card-header' }>
                     <h1>{plano}</h1>
                 </div>

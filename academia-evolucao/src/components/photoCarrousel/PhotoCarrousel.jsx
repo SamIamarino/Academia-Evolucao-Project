@@ -29,7 +29,7 @@ export default function PhotoCarrousel({photoArray,mobile}){
       <div style={mobile ? carouselStyleMobile : carouselStyleDesktop} className="carrousel">
         <Carousel dotPosition='bottom' draggable dots={isMobile ? false : true} arrows={isMobile ? true : false}>
           {
-            photoArray.map( (item) => 
+            photoArray.map((item) => 
             <div>
               <img src={item.imageUrl} alt={item.description} className="imageStyle"/>
             </div>

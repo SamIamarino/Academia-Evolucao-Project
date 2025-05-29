@@ -16,6 +16,7 @@
 }
 
 .plano-card-header{
+    border-radius: 25px 25px 0px 0px;
     background-color: #1C6CB4;
     width: 100%;
     text-align: center;
@@ -24,6 +25,7 @@
 }
 
 .plano-card-header-dark-themed{
+    border-radius: 25px 25px 0px 0px;
     background-color: #04FC04;
     width: 100%;
     text-align: center;
