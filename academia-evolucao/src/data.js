@@ -1,20 +1,26 @@
-import AboutIcon1 from './assets/iconesAboutCard/CheckIcon.png';
+
 import AboutIcon2 from './assets/iconesAboutCard/halterIcon.png';
 import AboutIcon3 from './assets/iconesAboutCard/littleMen.png';
 
-import AboutIcon1Dark from './assets/iconesAboutCard/IconDarkTheme1.png';
 import AboutIcon2Dark from './assets/iconesAboutCard/IconDarkTheme2.png';
 import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 
-  // {
-  //     imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746535241/IMG_6611-min_pl07ru.png",
-  // }
+import logoVerdeMobile from './assets/logos/logo-verde-brancoMobile.png';
+import logoAzulPreto from './assets/logos/logo-azul-pretoMobile.png';
+
 
 export const CARROUSEL_IMAGES = [
 
     {
         imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747423834/evoluindo2006textocert-min_vqpkbr.png",
-    }
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_2_fga9ph.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_3_ajhpcr.png",
+    },
+    
    
 ];
 
@@ -68,14 +74,14 @@ export const CARROUSEL_OUR_TEAM = [
 export const ABOUT_CARD_CONTENT = [
 
   {
-    imageUrl: AboutIcon1Dark,
+    imageUrl: AboutIcon2Dark,
     title: 'Equipamentos de qualidade',
     description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
   },
   {
-    imageUrl: AboutIcon2Dark ,
+    imageUrl: logoAzulPreto ,
     title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! O professor sempre estará disposto a ajudar e trocar seu treino'
+    description: 'Nosso atendimento consiste na consultoria presencial! <br> O professor sempre estará disposto a ajudar e trocar seu treino'
   },
   {
     imageUrl: AboutIcon3Dark,
@@ -88,14 +94,14 @@ export const ABOUT_CARD_CONTENT = [
 export const ABOUT_CARD_CONTENT_DARK_THEME = [
 
   {
-    imageUrl: AboutIcon1,
+    imageUrl: AboutIcon2,
     title: 'Equipamentos de qualidade',
     description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
   },
   {
-    imageUrl: AboutIcon2,
+    imageUrl: logoVerdeMobile,
     title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! O professor sempre estará disposto a ajudar e trocar seu treino'
+    description: 'Nosso atendimento consiste na consultoria presencial! \n\n O professor sempre estará disposto a ajudar e trocar seu treino'
   },
   {
     imageUrl: AboutIcon3,
