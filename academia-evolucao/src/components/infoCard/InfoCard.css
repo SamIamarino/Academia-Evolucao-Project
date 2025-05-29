@@ -65,6 +65,7 @@
     padding: 20px;
     padding-top: 0px;
     text-align: start;
+    white-space: pre-line;
 }
 
 @media (max-width: 850px) {
