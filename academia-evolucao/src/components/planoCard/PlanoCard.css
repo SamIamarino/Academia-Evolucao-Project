@@ -93,14 +93,12 @@
 @media (max-width: 850px ) {
     .plano-card{
         width: 300px;
-        height: 550px;
-        /* height: 550px; */
         margin: auto;
         /* Bug do box-shadow */
         margin-bottom: 20px;
     }
     .plano-card-hr{
-        margin-top: 30px;
+        margin-top: 65px;
         
     }
 }
