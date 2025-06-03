@@ -8,7 +8,7 @@ export default function InfoCard({title,description,darkTheme}){
                     <hr className={darkTheme ? 'info-card-hr-dark-themed' : 'info-card-hr'}/>
                 </div>
                 <div className={ darkTheme ? 'info-card-body-dark-themed' : 'info-card-body'}>
-                    <h3 className='info-card-description'>{description}</h3>
+                    <h3 className='info-card-description league-spartan-font'>{description}</h3>
                 </div>
         </div>
     );

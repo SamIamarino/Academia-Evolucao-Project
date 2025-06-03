@@ -1,6 +1,4 @@
 import './AboutCard.css';
-import peso from '../../assets/fotosCarrousel/peso.png'
-import pesoBranco from '../../assets/fotosCarrousel/pesoBranco.png'
 import { useState, useEffect } from 'react';
 
 
@@ -34,7 +32,7 @@ export default function AboutCard({imageUrl, title, description}){
             </div>
 
             <div className='about-card-body'>
-                <h3 className='about-card-description'>{description}</h3>
+                <h3 className='about-card-description league-spartan-font'>{description}</h3>
             </div>
         </div>
     );
