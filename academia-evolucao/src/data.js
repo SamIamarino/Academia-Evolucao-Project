@@ -1,12 +1,12 @@
+import AboutIcon1 from './assets/iconesAboutCard/CheckIcon.png';
+import AboutIcon2 from './assets/iconesAboutCard/littleMen.png';
+import AboutIcon3 from './assets/iconesAboutCard/proficonW.png';
 
-import AboutIcon2 from './assets/iconesAboutCard/halterIcon.png';
-import AboutIcon3 from './assets/iconesAboutCard/littleMen.png';
-
+import AboutIcon1Dark from './assets/iconesAboutCard/IconDarkTheme1.png';
 import AboutIcon2Dark from './assets/iconesAboutCard/IconDarkTheme2.png';
 import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 
-import logoVerdeMobile from './assets/logos/logo-verde-brancoMobile.png';
-import logoAzulPreto from './assets/logos/logo-azul-pretoMobile.png';
+
 
 
 export const CARROUSEL_IMAGES = [
@@ -74,17 +74,17 @@ export const CARROUSEL_OUR_TEAM = [
 export const ABOUT_CARD_CONTENT = [
 
   {
+    imageUrl: AboutIcon3Dark,
+    title: 'Consultoria Presencial' ,
+    description: 'Nosso atendimento consiste na consultoria presencial! \n\n O professor sempre estará disposto a ajudar e trocar seu treino'
+  },
+  {
     imageUrl: AboutIcon2Dark,
     title: 'Equipamentos de qualidade',
-    description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
+    description: 'Trabalhamos com equipamentos Cimerian, referência de qualidade e segurança no mercado.'
   },
   {
-    imageUrl: logoAzulPreto ,
-    title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! <br> O professor sempre estará disposto a ajudar e trocar seu treino'
-  },
-  {
-    imageUrl: AboutIcon3Dark,
+    imageUrl: AboutIcon1Dark,
     title: 'Aulas Inclusas',
     description: 'Em todos os nossos planos estão inclusas as aulas de bike spinning e ginástica, além da musculação.'
   }
@@ -92,23 +92,21 @@ export const ABOUT_CARD_CONTENT = [
 ];
 
 export const ABOUT_CARD_CONTENT_DARK_THEME = [
-
+  {
+    imageUrl: AboutIcon3,
+    title: 'Consultoria Presencial' ,
+    description: '- Treino Individualizado. \n - Assessoria para dúvidas. \n - Acompanhamento técnico.'
+  },
   {
     imageUrl: AboutIcon2,
     title: 'Equipamentos de qualidade',
-    description: 'Nosso equipamentos mais qualificados e seguros do mercado.'
+    description: 'Trabalhamos com equipamentos Cimerian, referência de qualidade e segurança no mercado.'
   },
   {
-    imageUrl: logoVerdeMobile,
-    title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! \n\n O professor sempre estará disposto a ajudar e trocar seu treino'
-  },
-  {
-    imageUrl: AboutIcon3,
+    imageUrl: AboutIcon1,
     title: 'Aulas Inclusas',
-    description: 'Em todos os nossos planos estão inclusas as aulas de bike spinning e ginástica, além da musculação.'
+    description: 'Todos planos incluem aulas de Bike Indoor, Jump e Step. Basta reservar pelo App.'
   }
-
 ];
 
 
@@ -135,17 +133,17 @@ export const PLANO_CONTENT = [
 export const INFO_CARD_CONTAINER_MAIN_PAGE = [
   {
     title: 'Musculação',
-    description: 'Segunda a Quinta - 5h00 às 22h00'
+    description: 'Segunda a Quinta - 5h00.'
   },
 
   {
     title: 'Spinning',
-    description: 'Segunda quarta e sexta - 5h30 às 6h30\nTerça e Quinta - 6h00 às 7h00\nTerça e Quinta - 18h00 às 19h00\nTerça e Quinta - 19h00 às 20h00\nSegunda e Quarta - 19h30 ás 20h30.'
+    description: 'Segunda quarta e sexta - 5h30 \nTerça e Quinta - 6h00 \nTerça e Quinta - 18h00 \nTerça e Quinta - 19h00 \nSegunda e Quarta - 19h30.'
   },
 
   {
     title: 'Ginástica',
-    description: 'Segunda e Quarta - 18h30 às 19h30'
+    description: 'Segunda e Quarta - 18h30'
   }
 ];
 
