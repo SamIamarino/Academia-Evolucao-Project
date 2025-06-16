@@ -3,7 +3,7 @@ import AboutIcon2 from './assets/iconesAboutCard/littleMen.png';
 import AboutIcon3 from './assets/iconesAboutCard/proficonW.png';
 
 import AboutIcon1Dark from './assets/iconesAboutCard/IconDarkTheme1.png';
-import AboutIcon2Dark from './assets/iconesAboutCard/IconDarkTheme2.png';
+import AboutIcon2Dark from './assets/iconesAboutCard/littleMenBlue.png';
 import AboutIcon3Dark from './assets/iconesAboutCard/IconDarkTheme3.png';
 
 
@@ -26,6 +26,9 @@ export const CARROUSEL_IMAGES = [
 
 export const CARROUSEL_IMAGES_HISTORIA = [
     {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1750078321/img001_1_edfcoa.png",
+    },
+    {
         imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424321/academiaHistoria_4_j5k6g3.png",
     },
     {
@@ -36,6 +39,12 @@ export const CARROUSEL_IMAGES_HISTORIA = [
     },
     {
         imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1747424320/academiaHistoria_1_q4vu2i.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1750077545/IMG_3083-min_e7wsvl.png",
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1750077545/IMG_3080-min_plqgs0.png",
     },
 ];
 
@@ -52,6 +61,9 @@ export const CARROUSEL_OUR_SPACE_FOTOS = [
   },
   {
       imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746816810/FotoLocal_4_xqvopy.png",
+  },
+  {
+      imageUrl: "https://res.cloudinary.com/dunfprrfv/image/upload/v1750077546/IMG_2160-min_thivsy.png",
   }
 
 ];
@@ -76,7 +88,7 @@ export const ABOUT_CARD_CONTENT = [
   {
     imageUrl: AboutIcon3Dark,
     title: 'Consultoria Presencial' ,
-    description: 'Nosso atendimento consiste na consultoria presencial! \n\n O professor sempre estará disposto a ajudar e trocar seu treino'
+    description: '- Treino Individualizado. \n - Assessoria para dúvidas. \n - Acompanhamento técnico.'
   },
   {
     imageUrl: AboutIcon2Dark,
@@ -114,18 +126,19 @@ export const ABOUT_CARD_CONTENT_DARK_THEME = [
 export const PLANO_CONTENT = [
   
     {
-      plano: 'Semestral',
-      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_2_fga9ph.png", 
-      description: 'Plano semestral, parcelado em 6 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartão todos os planos contém contrato.'},
-    {
-      plano: 'Trimestral',
-      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_1_cntk4q.png", 
-      description: 'Plano trimestral, parcelado em 3 vezes, o pagamento pode ser realizado mensalmente na recepçao ou parceado no cartão todos os planos contém contrato.'
+      price: 'r$ 660,00  (6 X de r$110,00)',
+      plano: 'Semestral',  
+      description1: 'Seis meses de acesso.',
     },
     {
-      plano: 'Mensal',
-      imagemPlano: "https://res.cloudinary.com/dunfprrfv/image/upload/v1746817669/planoImage_3_ajhpcr.png", 
-      description: 'Plano mensal no valor de r$ 130,00, o aluno pode frequentar a academia por um mês todos os planos contém contrato.'
+      price: 'r$ 360,00  (3 X de r$120,00)',
+      plano: 'Trimestral',
+      description1: 'Tres meses de acesso.',
+    },
+    {
+      price: 'R$ 130,00',
+      plano: 'Mensal', 
+      description1: 'Um mês de acesso.'
     }
 
 ];
@@ -133,7 +146,7 @@ export const PLANO_CONTENT = [
 export const INFO_CARD_CONTAINER_MAIN_PAGE = [
   {
     title: 'Musculação',
-    description: 'Segunda a Quinta - 5h00.'
+    description: 'Segunda à Quinta - 5h00 às 22h00. \n Sexta - 5h00 às 21h00  \n Sábados - 8h00.'
   },
 
   {

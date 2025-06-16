@@ -2,7 +2,7 @@ import './PlanoCard.css'
 import { useState,useEffect } from 'react';
 import WhatsAppButton from '../whatsappButton/WhatsappButton';
 // Coloar photoUrl como prop no plano card
-export default function PlanoCard ({plano,description,imagemPlano}){
+export default function PlanoCard ({plano,price,description1}) {
 
     const [isDarkTheme, setIsDarkTheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
 
@@ -28,15 +28,19 @@ export default function PlanoCard ({plano,description,imagemPlano}){
     return(
         <div className="plano-card">
             <div>
-                {/* <img src={imagemPlano} alt="Imagem plano" className='plano-img'/> */}
+                
                 <div className={isDarkTheme ? 'plano-card-header-dark-themed':'plano-card-header' }>
-                    <h1>{plano}</h1>
+                    <h4>{plano}</h4>
                 </div>
 
             </div>
             <div className={isDarkTheme ? 'plano-card-body-dark-themed' : 'plano-card-body'}>
-                <p className='league-spartan-font plano-card-content-paragraph'>{description}</p>
-                <hr className='plano-card-hr'/>
+                <h1 className='plano-price'>{price}</h1>
+                <p className='league-spartan-font'>{description1}</p>
+                <p className='league-spartan-font'>Sem taxa de adesão.</p>
+                <p className='league-spartan-font'>Pagamento parcelado no crédito ou realizado mensalmente na recepção (dinheiro, pix, ou cartão).</p>
+                <p className='league-spartan-font'>*Todos os planos contém contrato.</p>
+                <hr/>
                 <WhatsAppButton darkTheme={isDarkTheme}> Assine aqui </WhatsAppButton>
             </div>
         </div>

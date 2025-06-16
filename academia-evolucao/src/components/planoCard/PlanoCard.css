@@ -69,6 +69,10 @@
     height: 120px;
 }
 
+.plano-price{
+    font-size: 30px;
+}
+
 /* arrumar os padding no responsivo */
 
 @media (max-width: 1250px) {
@@ -93,6 +97,7 @@
 @media (max-width: 850px ) {
     .plano-card{
         width: 300px;
+        /* height: 650px; */
         margin: auto;
         /* Bug do box-shadow */
         margin-bottom: 20px;

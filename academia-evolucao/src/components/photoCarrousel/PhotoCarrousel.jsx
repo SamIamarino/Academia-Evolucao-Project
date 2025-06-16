@@ -1,11 +1,12 @@
-import { React } from "react";
 import { Carousel } from 'antd';
-import { useState, useEffect } from "react";
 import './PhotoCarrousel.css'
 
 const carouselStyleDesktop = {
   width: '100%',       // Full width
   height: '750px',   // Increase the height
+  // Ensure images cover the area
+  objectFit: 'cover',
+  objectPosition: 'center',
 };
 
 

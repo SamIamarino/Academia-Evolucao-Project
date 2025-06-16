@@ -6,12 +6,12 @@ export default function PlanosContainer({dataSource, mobile, darkTheme}){
 
         const desktopContent = 
             <div className='plano-card-container'>
-                {dataSource.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)}
+                {dataSource.map( item => <PlanoCard plano={item.plano} description1={item.description1} description2={item.description2} imagemPlano={item.imagemPlano} price={item.price}/>)}
             </div>
 
         const mobileContent = 
             <Carousel draggable dots={false} arrows>
-                {dataSource.map( item => <PlanoCard plano={item.plano} description={item.description} imagemPlano={item.imagemPlano}/>)} 
+                {dataSource.map( item => <PlanoCard plano={item.plano} description1={item.description1} description2={item.description2} imagemPlano={item.imagemPlano} price={item.price}/>)} 
             </Carousel>
 
 
